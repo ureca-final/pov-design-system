@@ -1,8 +1,10 @@
 {
   "name": "pov-design-system",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "pov 디자인 시스템",
-  "private": true,
+  "repository": "https://github.com/eureka-final/pov-design-system.git",
+  "author": "kimdayeon37 <kdy37912@naver.com>",
+  "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -54,7 +56,7 @@
     "@storybook/test": "^8.4.4",
     "@types/node": "^22.9.0",
     "@vitejs/plugin-react": "^3.1.0",
-    "auto": "^10.3.0",
+    "auto": "^11.3.0",
     "boxen": "^5.0.1",
     "cross-env": "^7.0.3",
     "dedent": "^0.7.0",

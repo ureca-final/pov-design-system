@@ -2,6 +2,12 @@
   "sourceType": "unambiguous",
   "presets": [
     [
+      "react-app",
+      {
+        "absoluteRuntime": false
+      }
+    ],
+    [
       "@babel/preset-env",
       {
         "targets": {
