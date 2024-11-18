@@ -11,4 +11,18 @@ export default defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: {
+      // 경로를 절대 경로로 설정
+      '@': '/src',
+      '@components': '/src/components',
+      '@types': '/src/types',
+      '@hooks': '/src/hooks',
+      '@styles': '/src/styles',
+      '@constants': '/src/constants',
+      '@assets': '/src/assets',
+      '@stories': '/src/stories',
+      '@utils': '/src/utils',
+    },
+  },
 });
