@@ -2,7 +2,10 @@
   "name": "pov-design-system",
   "version": "0.0.2",
   "description": "pov 디자인 시스템",
-  "repository": "https://github.com/eureka-final/pov-design-system.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eureka-final/pov-design-system.git"
+  },
   "author": "kimdayeon37 <kdy37912@naver.com>",
   "private": false,
   "main": "dist/cjs/index.js",
