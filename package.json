@@ -6,7 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/eureka-final/pov-design-system.git"
   },
-  "author": "kimdayeon37 <kdy37912@naver.com>",
+  "author": {
+    "name": "kimdayeon37",
+    "email": "kdy37912@naver.com"
+  },
   "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -23,7 +26,8 @@
     "release": "auto shipit --base-branch=main",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_934c52c49d198b5"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -60,7 +64,9 @@
     "@types/node": "^22.9.0",
     "@vitejs/plugin-react": "^3.1.0",
     "auto": "^11.3.0",
+    "babel-preset-react-app": "^10.0.1",
     "boxen": "^5.0.1",
+    "chromatic": "^11.18.1",
     "cross-env": "^7.0.3",
     "dedent": "^0.7.0",
     "npm-run-all": "^4.1.5",
@@ -94,5 +100,9 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/eureka-final/pov-design-system/issues"
+  },
+  "homepage": "https://github.com/eureka-final/pov-design-system#readme"
 }
