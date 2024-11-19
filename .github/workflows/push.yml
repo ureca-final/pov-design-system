@@ -26,15 +26,15 @@ jobs:
         uses: actions/cache@v1
         with:
           path: node_modules
-          key: yarn-deps-${{ hashFiles('yarn.lock') }}
+          key: npm-deps-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            yarn-deps-${{ hashFiles('yarn.lock') }}
+            npm-deps-${{ hashFiles('package-lock.json') }}
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #👇 npm token, see https://storybook.js.org/tutorials/design-systems-for-developers/react/ko/distribute/ to obtain it
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          yarn install --frozen-lockfile
-          yarn build
-          yarn release
+          npm install
+          npm run build
+          npm run release
