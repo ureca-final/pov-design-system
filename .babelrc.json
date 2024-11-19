@@ -23,5 +23,15 @@
       "@babel/preset-typescript"
     ]
   ],
-  "plugins": ["@emotion/babel-plugin"]
+  "plugins": ["@emotion/babel-plugin"],
+  "overrides": [
+    {
+      "test": "*.ts",
+      "presets": ["@babel/preset-typescript"]
+    },
+    {
+      "test": "*.tsx",
+      "presets": ["@babel/preset-typescript", "@babel/preset-react"]
+    }
+  ]
 }
