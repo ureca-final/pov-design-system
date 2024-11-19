@@ -1,11 +1,6 @@
-# v1.0.1 (Tue Nov 19 2024)
+# v0.0.1 (Tue Nov 19 2024)
 
-#### ⚠️ Pushed to `main`
-
-- chore: access token 추가 ([@dyeon-dev](https://github.com/dyeon-dev))
-- chore: npm 패키지 배포 설정 ([@dyeon-dev](https://github.com/dyeon-dev))
-- feat: Button 컴포넌트 생성 ([@dyeon-dev](https://github.com/dyeon-dev))
-- chore: 프로젝트 세팅 ([@dyeon-dev](https://github.com/dyeon-dev))
+- Created first version of the design system, with `Button` components.
 
 #### Authors: 1
 
