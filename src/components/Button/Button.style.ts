@@ -86,7 +86,7 @@ export const buttonStyling = css({
 
   backgroundColor: Theme.color.white,
 
-  fontWeight: 600,
+  fontWeight: 500,
 
   transition: 'all .2s ease-in',
 
