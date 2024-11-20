@@ -1,3 +1,16 @@
+# v0.0.9 (Wed Nov 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/eureka-final/pov-design-system ([@dyeon-dev](https://github.com/dyeon-dev))
+- chore: chromatic 자동 배포 ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.8 (Wed Nov 20 2024)
 
 #### ⚠️ Pushed to `main`
