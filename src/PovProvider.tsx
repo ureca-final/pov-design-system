@@ -1,8 +1,8 @@
 import { Global, ThemeProvider } from '@emotion/react';
 import type { PropsWithChildren } from 'react';
 
-import { GlobalStyle } from '@styles/GlobalStyle';
-import { Theme } from '@styles/Theme';
+import { GlobalStyle } from './styles/GlobalStyle';
+import { Theme } from './styles/Theme';
 
 type PovProviderProps = PropsWithChildren;
 

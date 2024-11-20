@@ -1,4 +1,4 @@
-import type { Size } from '@type/index';
+import type { Size } from '../../types/index';
 import type { ComponentPropsWithRef, ForwardedRef } from 'react';
 import { forwardRef } from 'react';
 
