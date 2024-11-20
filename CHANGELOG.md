@@ -1,3 +1,15 @@
+# v0.0.12 (Wed Nov 20 2024)
+
+#### 🐛 Bug Fix
+
+- feat: Avatar 컴포넌트 생성 [#3](https://github.com/eureka-final/pov-design-system/pull/3) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.11 (Wed Nov 20 2024)
 
 #### ⚠️ Pushed to `main`
