@@ -1,3 +1,18 @@
+# v0.0.8 (Wed Nov 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: node version ([@dyeon-dev](https://github.com/dyeon-dev))
+- chore: @babel/plugin-proposal-private-property-in-object ([@dyeon-dev](https://github.com/dyeon-dev))
+- fix: babelric.json ([@dyeon-dev](https://github.com/dyeon-dev))
+- fix: push.xml 수정 ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.7 (Tue Nov 19 2024)
 
 #### ⚠️ Pushed to `main`
