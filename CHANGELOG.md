@@ -1,3 +1,16 @@
+# v0.0.10 (Wed Nov 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/eureka-final/pov-design-system ([@dyeon-dev](https://github.com/dyeon-dev))
+- fix: 절대경료 -> 상대경로 ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.9 (Wed Nov 20 2024)
 
 #### ⚠️ Pushed to `main`
