@@ -21,14 +21,16 @@ const Button = (
     ...attributes
   }: ButtonProps,
   ref: ForwardedRef<HTMLButtonElement>,
-) => (
-  <button
-    ref={ref}
-    css={[buttonStyling, getVariantStyling(variant), getSizeStyling(size)]}
-    {...attributes}
-  >
-    {children}
-  </button>
-);
+) => {
+  return (
+    <button
+      ref={ref}
+      css={[buttonStyling, getVariantStyling(variant), getSizeStyling(size)]}
+      {...attributes}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default forwardRef(Button);
