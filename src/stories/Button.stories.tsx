@@ -5,7 +5,7 @@ import type { ButtonProps } from '../components/Button/Button';
 import Button from '../components/Button/Button';
 
 const meta = {
-  title: 'Button',
+  title: 'Design System/Button',
   component: Button,
   argTypes: {
     variant: {
