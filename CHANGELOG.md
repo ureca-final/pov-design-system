@@ -1,3 +1,15 @@
+# v0.0.13 (Wed Nov 20 2024)
+
+#### 🐛 Bug Fix
+
+- fix: Avatar 패키지 내보내기 [#4](https://github.com/eureka-final/pov-design-system/pull/4) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.12 (Wed Nov 20 2024)
 
 #### 🐛 Bug Fix
