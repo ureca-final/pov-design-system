@@ -42,3 +42,5 @@ export const AvatarList: React.FC<AvatarListProps> = ({
     </Users>
   );
 };
+
+export default AvatarList;
