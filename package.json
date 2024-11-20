@@ -33,7 +33,6 @@
     "@babel/plugin-transform-runtime": "^7.25.9",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@rollup/plugin-alias": "^5.1.1",
     "@storybook/addon-a11y": "^8.4.4",
     "@storybook/testing-library": "^0.2.1",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",

@@ -6,7 +6,7 @@ import {
   buttonStyling,
   getSizeStyling,
   getVariantStyling,
-} from '@components/Button/Button.style';
+} from '../../components/Button/Button.style';
 
 export interface ButtonProps extends ComponentPropsWithRef<'button'> {
   size?: Extract<Size, 'small' | 'medium' | 'large'>;
