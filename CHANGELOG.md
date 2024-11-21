@@ -1,3 +1,15 @@
+# v0.0.16 (Thu Nov 21 2024)
+
+#### 🐛 Bug Fix
+
+- feat: 다크모드 정의 [#7](https://github.com/eureka-final/pov-design-system/pull/7) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.15 (Thu Nov 21 2024)
 
 #### 🐛 Bug Fix
