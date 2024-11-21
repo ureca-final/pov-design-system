@@ -1,3 +1,15 @@
+# v0.0.17 (Thu Nov 21 2024)
+
+#### 🐛 Bug Fix
+
+- style: 다크모드 상수 변경 [#8](https://github.com/eureka-final/pov-design-system/pull/8) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.16 (Thu Nov 21 2024)
 
 #### 🐛 Bug Fix
