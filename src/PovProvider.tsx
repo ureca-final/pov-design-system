@@ -11,10 +11,11 @@ type PovProviderProps = PropsWithChildren;
 export const PovProvider = ({ children }: PovProviderProps) => {
   const [theme, setTheme] = useState<TypeofTheme>("dark"); //현재 모드값에 대한 state
 
-  const toggleStyle = useCallback((mode: TypeofTheme) => {
-    localStorage.setItem("theme", mode);
-    setTheme(mode);
-  }, []); //클릭시 현재 모드값을 바꾸는 함수
+  const toggleStyle = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  }; //클릭시 현재 모드값을 바꾸는 함수
 
   useEffect(() => {
     const nowTheme = (localStorage.getItem("theme") as TypeofTheme) || "dark"; // 기본값 설정
