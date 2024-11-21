@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 import { Global, ThemeProvider } from '@emotion/react';
 import type { PropsWithChildren } from 'react';
 import { GlobalStyle } from './styles/GlobalStyle';
-import { lightTheme, darkTheme, Theme as AppTheme } from './styles/Theme';
+import { lightTheme, darkTheme } from './styles/Theme';
 
 interface ThemeContextProps {
   theme: 'light' | 'dark';
@@ -23,16 +23,10 @@ export const PovProvider = ({ children }: PovProviderProps) => {
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
   };
-
-  // `ThemeProvider`가 요구하는 타입으로 theme 객체 구성
-  const themeObject = {
-    ...AppTheme, // 기존 Theme 객체 포함
-    ...(theme === 'light' ? lightTheme : darkTheme), // 라이트/다크 테마 통합
-  };
-
+  
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <ThemeProvider theme={themeObject}>
+      <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <Global styles={GlobalStyle} />
         {children}
       </ThemeProvider>
