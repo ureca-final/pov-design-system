@@ -3,7 +3,7 @@ import type { Preview } from '@storybook/react';
 import { Global, ThemeProvider } from '@emotion/react';
 
 import { GlobalStyle } from '../src/styles/GlobalStyle';
-import { Theme } from '../src/styles/Theme';
+import { darkTheme } from '../src/styles/Theme';
 
 const preview: Preview = {
   parameters: {
@@ -23,7 +23,7 @@ const preview: Preview = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={Theme}>
+    <ThemeProvider theme={darkTheme}>
       <Global styles={GlobalStyle} />
       <Story />
     </ThemeProvider>

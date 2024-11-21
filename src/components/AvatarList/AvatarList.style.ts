@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 import { Avatar } from '../Avatar/Avatar';
-import { Theme } from '../../styles/Theme';
+import { darkTheme } from '../../styles/Theme';
 
 export const UserAvatar = styled(Avatar)`
-  box-shadow: ${Theme.color.gray100} 0 0 0 2px;
+  box-shadow: ${darkTheme.color.gray100} 0 0 0 2px;
   display: block;
 `;
 
 export const UserEllipses = styled.li`
   display: inline-flex;
-  font-size: ${Theme.typography.body2}px;
-  color: ${Theme.color.gray400};
+  font-size: ${darkTheme.typography.body2}px;
+  color: ${darkTheme.color.gray400};
   margin-left: 6px;
   white-space: nowrap;
 `;
