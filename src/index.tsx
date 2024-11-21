@@ -1,4 +1,5 @@
 import { PovProvider } from './PovProvider';
+import { useTheme } from './PovProvider';
 
 import * as icons from './assets/icons';
 import * as animation from './styles/animation/index';
@@ -12,4 +13,4 @@ import { Theme } from './styles/Theme';
 
 export { animation, icons };
 
-export { PovProvider, Button, Avatar, AvatarList, Icon, Theme };
+export { PovProvider, Button, Avatar, AvatarList, Icon, Theme, useTheme };
