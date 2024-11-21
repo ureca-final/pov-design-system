@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import { darkTheme } from '../styles/Theme';
+import { themes } from '../styles/Theme';
 
 const containerStyle = css({
   display: 'flex',
@@ -17,7 +17,7 @@ const informationStyle = css({
   gap: '12px',
 
   '& > h6': {
-    color: darkTheme.color.gray500,
+    color: themes.dark.color.gray500,
     fontSize: '12px',
     fontWeight: 400,
     textTransform: 'uppercase',
