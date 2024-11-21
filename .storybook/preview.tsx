@@ -2,8 +2,8 @@ import React from 'react';
 import type { Preview } from '@storybook/react';
 import { Global, ThemeProvider } from '@emotion/react';
 
-import { GlobalStyle } from '../src/styles/GlobalStyle';
-import { darkTheme } from '../src/styles/Theme';
+import { GlobalStyle, TypeofTheme } from '../src/styles/GlobalStyle';
+import { themes } from '../src/styles/Theme';
 
 const preview: Preview = {
   parameters: {
@@ -20,11 +20,11 @@ const preview: Preview = {
     },
   },
 };
-
+const theme = localStorage.getItem("theme") as TypeofTheme;
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Global styles={GlobalStyle} />
+    <ThemeProvider theme={themes.dark}>
+      <Global styles={GlobalStyle(theme)} />
       <Story />
     </ThemeProvider>
   ),
