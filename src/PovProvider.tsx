@@ -1,40 +1,30 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { Global, ThemeProvider } from '@emotion/react';
 import type { PropsWithChildren } from 'react';
-import { GlobalStyle } from './styles/GlobalStyle';
-import { lightTheme, darkTheme } from './styles/Theme';
+import { GlobalStyle, StyleMode, TypeofTheme } from './styles/GlobalStyle';
+import { themes } from './styles/Theme';
 
-interface ThemeContextProps {
-  theme: 'light' | 'dark';
-  toggleTheme: () => void;
-}
-
-const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
+const ThemeContext = createContext<StyleMode | null>(null); //Context 생성
 
 type PovProviderProps = PropsWithChildren;
 
 export const PovProvider = ({ children }: PovProviderProps) => {
-  const [theme, setTheme] = useState<'light' | 'dark'>(
-    (localStorage.getItem('theme') as 'light' | 'dark') || 'light'
-  );
+  const [theme, setTheme] = useState<TypeofTheme>("dark"); //현재 모드값에 대한 state
 
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-  };
+  const toggleStyle = useCallback((mode: TypeofTheme) => {
+    localStorage.setItem("theme", mode);
+    setTheme(mode);
+  }, []); //클릭시 현재 모드값을 바꾸는 함수
 
-  // pov-design-system의 theme 객체 사용
-  const currentTheme = theme === 'light' ? lightTheme : darkTheme;
-
-  console.log('Current Theme:', theme);
-  console.log('Current Theme Object:', currentTheme);
-  console.log('Stored Theme:', localStorage.getItem('theme'));
+  useEffect(() => {
+      const nowTheme = localStorage.getItem("theme") as TypeofTheme;
+      setTheme(nowTheme);
+  }, []); //초기 실행시 현재 모드값 읽기
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <ThemeProvider theme={currentTheme}>
-        <Global styles={GlobalStyle} />
+    <ThemeContext.Provider value={{ theme, toggleStyle }}>
+      <ThemeProvider theme={themes[theme]}>
+        <Global styles={GlobalStyle(theme)} />
         {children}
       </ThemeProvider>
     </ThemeContext.Provider>

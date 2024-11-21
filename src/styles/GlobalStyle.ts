@@ -1,26 +1,32 @@
 import { css } from '@emotion/react';
 
-import { darkTheme } from './Theme';
+import { themes } from './Theme';
+export type TypeofTheme = keyof typeof themes; //모드의 type("light" | "dark")
 
-export const GlobalStyle = css({
-  '*': {
-    padding: 0,
-    margin: 0,
-    boxSizing: 'border-box',
-  },
+export type StyleMode = {
+  toggleStyle: (mode: TypeofTheme) => void; //현재 모드를 바꿔주는 함수
+  theme: TypeofTheme; //현재모드
+};
 
-  'ul, ol, li': {
-    listStyle: 'none',
-  },
+export const GlobalStyle = (theme: TypeofTheme) => css`
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-  'html, body': {
-    fontFamily: `system-ui, -apple-system, BlinkMacSystemFont, 'Pretendard'`,
-    fontSize: '16px',
-    color: darkTheme.color.gray700,
-  },
+  ul, ol, li {
+    list-style: none;
+  }
 
-  a: {
-    textDecoration: 'none',
-    color: darkTheme.color.purple600,
-  },
-});
+  html, body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Pretendard';
+    font-size: 16px;
+    color: ${themes[theme].text};
+    background-color: ${themes[theme].background};
+  }
+
+  a {
+    text-decoration: none;
+  }
+`;
