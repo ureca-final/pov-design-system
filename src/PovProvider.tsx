@@ -17,8 +17,8 @@ export const PovProvider = ({ children }: PovProviderProps) => {
   }, []); //클릭시 현재 모드값을 바꾸는 함수
 
   useEffect(() => {
-      const nowTheme = localStorage.getItem("theme") as TypeofTheme;
-      setTheme(nowTheme);
+    const nowTheme = (localStorage.getItem("theme") as TypeofTheme) || "dark"; // 기본값 설정
+    setTheme(nowTheme);
   }, []); //초기 실행시 현재 모드값 읽기
 
   return (
