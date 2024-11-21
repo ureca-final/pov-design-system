@@ -1,3 +1,15 @@
+# v0.0.14 (Thu Nov 21 2024)
+
+#### 🐛 Bug Fix
+
+- feat: PovProvider 내부에 테마 상태 및 컨텍스트 추가 [#5](https://github.com/eureka-final/pov-design-system/pull/5) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.13 (Wed Nov 20 2024)
 
 #### 🐛 Bug Fix
