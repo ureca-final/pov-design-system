@@ -1,4 +1,4 @@
-import PovProvider from './PovProvider';
+import { PovProvider } from './PovProvider';
 
 import * as icons from './assets/icons';
 import * as animation from './styles/animation/index';

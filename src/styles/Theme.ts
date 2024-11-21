@@ -120,6 +120,25 @@ const color = {
     overlayBottom: 1,
   } as const;
   
+// Theme 정의
+export interface Theme {
+  background: string;
+  text: string;
+}
+
+// Light Theme
+export const lightTheme: Theme = {
+  background: '#ffffff',
+  text: '#000000',
+};
+
+// Dark Theme
+export const darkTheme: Theme = {
+  background: '#000000',
+  text: '#ffffff',
+};
+
+
   export const Theme = {
     color,
     typography,
