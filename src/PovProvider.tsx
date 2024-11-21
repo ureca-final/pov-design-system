@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Global, ThemeProvider } from '@emotion/react';
 import type { PropsWithChildren } from 'react';
 import { GlobalStyle } from './styles/GlobalStyle';
@@ -18,15 +18,19 @@ export const PovProvider = ({ children }: PovProviderProps) => {
     (localStorage.getItem('theme') as 'light' | 'dark') || 'light'
   );
 
+  useEffect(() => {
+    localStorage.setItem('theme', theme); // 테마 변경 시 로컬스토리지에 저장
+  }, [theme]);
+
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
-  
+
+  const themeObject = theme === 'light' ? lightTheme : darkTheme;
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <ThemeProvider theme={themeObject}>
         <Global styles={GlobalStyle} />
         {children}
       </ThemeProvider>
