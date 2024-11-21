@@ -1,12 +1,21 @@
 const darkBackground = {
-	background: '#333036',
-  backgroundElevated: '#4C494E'
-};
-
+  background: '#333036',
+  text: '#F5F5F5'
+}
 const lightBackground = {
-	background: '#F5F5F5',
-  backgroundElevated: '#FFFFFF'
-};
+  background: '#F5F5F5',
+  text: '#333036'
+}
+
+const darkBackgroundElevated = {
+	background: '#4C494E',
+  text: '#FFFFFF'
+}
+
+const lightBackgroundElevated = {
+	background: '#FFFFFF',
+  text: '#4C494E'
+}
 
 const darkBase = {
   primary: '#FFFFFF',
@@ -149,6 +158,7 @@ const zIndex = {
   
 export const darkTheme = {
   darkBackground,
+  darkBackgroundElevated,
   darkBase,
   color,
   typography,
@@ -160,6 +170,7 @@ export const darkTheme = {
 
 export const lightTheme = {
   lightBackground,
+  lightBackgroundElevated,
   lightBase,
   color,
   typography,
