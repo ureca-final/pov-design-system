@@ -4,7 +4,7 @@ interface TextStyle {
   [key: string]: {
     fontSize: string;
     lineHeight: string;
-    fontWeight: int;
+    fontWeight: number;
   };
 }
 
