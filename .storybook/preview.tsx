@@ -1,9 +1,6 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
-import { Global, ThemeProvider } from '@emotion/react';
-
-import { GlobalStyle } from '../src/styles/GlobalStyle';
-import { darkTheme } from '../src/styles/Theme';
+import { PovProvider } from '../src/PovProvider';
 
 const preview: Preview = {
   parameters: {
@@ -23,10 +20,9 @@ const preview: Preview = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={darkTheme}>
-      <Global styles={GlobalStyle} />
+    <PovProvider>
       <Story />
-    </ThemeProvider>
+    </PovProvider>
   ),
 ];
 

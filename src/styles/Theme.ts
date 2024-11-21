@@ -156,10 +156,10 @@ const zIndex = {
   overlayBottom: 1,
 } as const;
   
-export const darkTheme = {
-  darkBackground,
-  darkBackgroundElevated,
-  darkBase,
+
+const darkTheme = { // 다크 모드시 스타일
+  background: '#333036',
+  text: '#F5F5F5',
   color,
   typography,
   spacer,
@@ -168,14 +168,18 @@ export const darkTheme = {
   zIndex,
 }
 
-export const lightTheme = {
-  lightBackground,
-  lightBackgroundElevated,
-  lightBase,
+const lightTheme = { // 라이트 모드시 스타일
+  background: '#F5F5F5',
+  text: '#333036',
   color,
   typography,
   spacer,
   borderRadius,
   boxShadow,
   zIndex,
+}
+
+export const themes = {
+  light: lightTheme,
+  dark: darkTheme,
 }

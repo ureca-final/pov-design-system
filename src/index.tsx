@@ -9,8 +9,8 @@ import Avatar from './components/Avatar/Avatar';
 import AvatarList from './components/AvatarList/AvatarList';
 import Icon from './components/Icon/Icon';
 
-import { darkTheme, lightTheme } from './styles/Theme';
+import { themes } from './styles/Theme';
 
 export { animation, icons };
 
-export { PovProvider, Button, Avatar, AvatarList, Icon, darkTheme, lightTheme, useTheme };
+export { PovProvider, Button, Avatar, AvatarList, Icon, themes, useTheme };

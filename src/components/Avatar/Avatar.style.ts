@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { darkTheme } from '../../styles/Theme';
+import { themes } from '../../styles/Theme';
 
 export const sizes = {
   large: 40,
@@ -10,7 +10,7 @@ export const sizes = {
 };
 
 export const Image = styled.div<{ size: keyof typeof sizes; loading: boolean; src?: string | null }>`
-  background: ${(props) => (!props.loading ? 'transparent' : darkTheme.color.gray100)};
+  background: ${(props) => (!props.loading ? 'transparent' : themes.dark.color.gray100)};
   border-radius: 50%;
   display: inline-block;
   vertical-align: top;
@@ -42,6 +42,6 @@ export const Image = styled.div<{ size: keyof typeof sizes; loading: boolean; sr
   }
 
   path {
-    fill: ${darkTheme.color.gray300};
+    fill: ${themes.dark.color.gray300};
   }
 `;
