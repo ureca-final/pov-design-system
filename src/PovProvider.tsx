@@ -18,19 +18,22 @@ export const PovProvider = ({ children }: PovProviderProps) => {
     (localStorage.getItem('theme') as 'light' | 'dark') || 'light'
   );
 
-  useEffect(() => {
-    localStorage.setItem('theme', theme); // 테마 변경 시 로컬스토리지에 저장
-  }, [theme]);
-
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
 
-  const themeObject = theme === 'light' ? lightTheme : darkTheme;
+  // pov-design-system의 theme 객체 사용
+  const currentTheme = theme === 'light' ? lightTheme : darkTheme;
+
+  console.log('Current Theme:', theme);
+  console.log('Current Theme Object:', currentTheme);
+  console.log('Stored Theme:', localStorage.getItem('theme'));
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <ThemeProvider theme={themeObject}>
+      <ThemeProvider theme={currentTheme}>
         <Global styles={GlobalStyle} />
         {children}
       </ThemeProvider>
