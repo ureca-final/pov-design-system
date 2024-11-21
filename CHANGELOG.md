@@ -1,3 +1,15 @@
+# v0.0.21 (Thu Nov 21 2024)
+
+#### 🐛 Bug Fix
+
+- fix: 로컬스토리지에 객체가 저장되는 문제 해결 [#12](https://github.com/eureka-final/pov-design-system/pull/12) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.20 (Thu Nov 21 2024)
 
 #### 🐛 Bug Fix
