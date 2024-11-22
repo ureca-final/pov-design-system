@@ -8,7 +8,6 @@ export const getVariantStyling = (variant: Required<ButtonProps>['variant']) => 
   const style = {
     primary: css({
       backgroundColor: themes.dark.color.purple400,
-
       color: themes.dark.color.white,
 
       '&:hover:enabled': {
@@ -21,7 +20,6 @@ export const getVariantStyling = (variant: Required<ButtonProps>['variant']) => 
     }),
     secondary: css({
       backgroundColor: themes.dark.color.purple200,
-
       color: themes.dark.color.purple500,
 
       '&:hover:enabled': {
@@ -34,7 +32,6 @@ export const getVariantStyling = (variant: Required<ButtonProps>['variant']) => 
     }),
     default: css({
       backgroundColor: themes.dark.color.gray200,
-
       color: themes.dark.color.gray700,
 
       '&:hover:enabled': {
@@ -55,20 +52,20 @@ export const getSizeStyling = (size: Required<ButtonProps>['size']) => {
     large: css({
       width: '320px',
       height: '56px',
-      fontSize: themes.dark.typography.heading05.fontSize,
-      lineHeight: themes.dark.typography.heading05.lineHeight,
+      fontSize: themes.dark.typography.body01.fontSize,
+      lineHeight: themes.dark.typography.body01.lineHeight,
     }),
     medium: css({
       width: '200px',
       height: '56px',
-      fontSize: themes.dark.typography.heading05.fontSize,
-      lineHeight: themes.dark.typography.heading05.lineHeight,
+      fontSize: themes.dark.typography.body02.fontSize,
+      lineHeight: themes.dark.typography.body02.lineHeight,
     }),
     small: css({
       width: '120px',
       height: '48px', 
-      fontSize: themes.dark.typography.heading05.fontSize,
-      lineHeight: themes.dark.typography.heading05.lineHeight,
+      fontSize: themes.dark.typography.body04.fontSize,
+      lineHeight: themes.dark.typography.body04.lineHeight,
     }),
   };
 
