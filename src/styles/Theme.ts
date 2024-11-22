@@ -1,38 +1,3 @@
-const darkBackground = {
-  background: '#333036',
-  text: '#F5F5F5'
-}
-const lightBackground = {
-  background: '#F5F5F5',
-  text: '#333036'
-}
-
-const darkBackgroundElevated = {
-	background: '#4C494E',
-  text: '#FFFFFF'
-}
-
-const lightBackgroundElevated = {
-	background: '#FFFFFF',
-  text: '#4C494E'
-}
-
-const darkBase = {
-  primary: '#FFFFFF',
-  secondary: '#E5E5E5',
-  teritary: '#ADACAF',
-  muted: '#858386',
-  faint: '#676668'
-}
-
-const lightBase = {
-  primary: '#333036',
-  secondary: '#676668',
-  teritary: '#ADACAF',
-  muted: '#C9C9CA',
-  faint: '#E5E5E5'
-};
-
 const color = {
     /** Black & White **/
     black: 'black',
