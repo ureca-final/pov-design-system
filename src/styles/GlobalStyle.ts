@@ -22,7 +22,7 @@ export const GlobalStyle = (theme: TypeofTheme) => css`
   html, body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Pretendard';
     font-size: 16px;
-    color: ${themes[theme].text};
+    color: ${themes[theme].primary};
     background-color: ${themes[theme].background};
   }
 
