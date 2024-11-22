@@ -12,6 +12,8 @@ declare module '@emotion/react' {
   export interface Theme {
     background: string;
     text: string;
+    backgroundElevated: string;
+    textElevated: string;
     color: { [key: string]: string };
     typography: TextStyle;
     spacer: { [key: string]: string };
