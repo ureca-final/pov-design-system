@@ -9,7 +9,7 @@ export const UserAvatar = styled(Avatar)`
 
 export const UserEllipses = styled.li`
   display: inline-flex;
-  font-size: ${themes.dark.typography.body2}px;
+  font-size: ${themes.dark.typography.body02}px;
   color: ${themes.dark.color.gray400};
   margin-left: 6px;
   white-space: nowrap;
