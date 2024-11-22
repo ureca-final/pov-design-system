@@ -7,10 +7,14 @@ import * as animation from './styles/animation/index';
 import Button from './components/Button/Button';
 import Avatar from './components/Avatar/Avatar';
 import AvatarList from './components/AvatarList/AvatarList';
+import Badge from './components/Badge/Badge';
+import Heading from './components/Heading/Heading';
+import Body from './components/Body/Body';
+import Paragraph from './components/Paragraph/Paragraph';
 import Icon from './components/Icon/Icon';
 
 import { themes } from './styles/Theme';
 
 export { animation, icons };
 
-export { PovProvider, Button, Avatar, AvatarList, Icon, themes, useTheme };
+export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, themes, useTheme };

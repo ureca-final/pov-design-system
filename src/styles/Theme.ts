@@ -34,51 +34,61 @@ const color = {
   } as const;
   
 const typography = {
-  h1: {
-    fontSize: '24px',
-    lineHeight: '28.8px',
+  heading01: {
+    fontSize: '2.4rem',
+    lineHeight: '120%',
     fontWeight: 700,
   },
-  h2: {
-      fontSize: '20px',
-      lineHeight: '24px',
+  heading02: {
+      fontSize: '2.0rem',
+      lineHeight: '120%',
       fontWeight: 700,
   },
-  h3: {
-      fontSize: '18px',
-      lineHeight: '21.6px',
+  heading03: {
+      fontSize: '1.8rem',
+      lineHeight: '120%',
       fontWeight: 700,
   },
-  h4: {
-      fontSize: '16px',
-      lineHeight: '19.2px',
+  heading04: {
+      fontSize: '1.6rem',
+      lineHeight: '120%',
       fontWeight: 700,
   },
-  h5: {
-      fontSize: '14px',
-      lineHeight: '16.8px',
+  heading05: {
+      fontSize: '1.4rem',
+      lineHeight: '120%',
       fontWeight: 700,
   },
-  body1: {
-      fontSize: '16px',
-      lineHeight: '19.2px',
+  body01: {
+      fontSize: '1.6rem',
+      lineHeight: '120%',
       fontWeight: 500,
   },
-  body2: {
-      fontSize: '14px',
-      lineHeight: '16.8px',
+  body02: {
+      fontSize: '1.4rem',
+      lineHeight: '120%',
       fontWeight: 500,
   },
-  body3: {
-      fontSize: '12px',
-      lineHeight: '14.4px',
+  body03: {
+      fontSize: '1.2rem',
+      lineHeight: '120%',
       fontWeight: 400,
   },
-  body4: {
-      fontSize: '11px',
-      lineHeight: '13.2px',
+  body04: {
+      fontSize: '1.1rem',
+      lineHeight: '120%',
       fontWeight: 400,
   },
+  paragraph: {
+    fontSize: '1.6rem',
+    lineHeight: '160%',
+    fontWeight: 400,
+  },
+  badge: {
+    fontSize: '1.2rem',
+    lineHeight: '100%',
+    fontWeight: 700,
+  }
 } as const;
   
 const spacer = {
@@ -98,7 +108,7 @@ const borderRadius = {
   small: '4px',
   /** default border radius */
   medium: '8px',
-  large: '16px',
+  large: '20px',
 } as const;
 
 const boxShadow = {
