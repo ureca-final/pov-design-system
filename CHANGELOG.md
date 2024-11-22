@@ -1,3 +1,16 @@
+# v0.0.24 (Fri Nov 22 2024)
+
+#### 🐛 Bug Fix
+
+- fix: font [#17](https://github.com/eureka-final/pov-design-system/pull/17) ([@dyeon-dev](https://github.com/dyeon-dev))
+- feat: Typography, Badge 컴포넌트 생성 [#16](https://github.com/eureka-final/pov-design-system/pull/16) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.23 (Fri Nov 22 2024)
 
 #### 🐛 Bug Fix
