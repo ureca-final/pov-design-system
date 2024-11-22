@@ -164,7 +164,11 @@ const lightTheme = { // 라이트 모드시 스타일
   zIndex,
 }
 
-export const themes = {
+// Theme 타입 정의
+export type ThemeType = typeof lightTheme;
+
+// themes 객체에 대한 타입 정의
+export const themes: { light: ThemeType; dark: ThemeType } = {
   light: lightTheme,
   dark: darkTheme,
-}
+};

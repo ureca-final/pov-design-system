@@ -12,6 +12,10 @@ const meta = {
       options: ['default', 'primary', 'outline'],
       description: 'Badge의 비주얼 스타일',
     },
+    size: {
+      control: { type: 'radio' },
+      options: ['small', 'large'],
+    },
     children: {
       control: { type: 'text' },
       description: 'Badge에 표시할 내용',
@@ -19,6 +23,7 @@ const meta = {
   },
   args: {
     variant: 'default',
+    size: 'small',
     children: 'Badge',
   },
 } satisfies Meta<typeof Badge>;
@@ -47,6 +52,30 @@ export const Variants: Story = {
     ),
   argTypes: {
     variant: {
+      control: false,
+    },
+  },
+};
+
+export const Sizes: Story = {
+  render: ({ variant, children }) => (
+    <ul css={containerStyle}>
+      <li css={informationStyle}>
+        <h6>Small</h6>
+        <Badge variant={variant} size='small'>
+          {children}
+        </Badge>
+      </li>
+      <li css={informationStyle}>
+        <h6>Large</h6>
+        <Badge variant={variant} size='large'>
+          {children}
+        </Badge>
+      </li>
+    </ul>
+  ),
+  argTypes: {
+    size: {
       control: false,
     },
   },

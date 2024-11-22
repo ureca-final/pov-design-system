@@ -83,8 +83,6 @@ export const buttonStyling = css({
 
   backgroundColor: themes.dark.color.white,
 
-  fontWeight: 500,
-
   transition: 'all .2s ease-in',
 
   cursor: 'pointer',
