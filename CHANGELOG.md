@@ -1,3 +1,15 @@
+# v0.0.22 (Fri Nov 22 2024)
+
+#### 🐛 Bug Fix
+
+- feat: elvated [#13](https://github.com/eureka-final/pov-design-system/pull/13) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.21 (Thu Nov 21 2024)
 
 #### 🐛 Bug Fix
