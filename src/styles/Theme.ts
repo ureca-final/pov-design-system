@@ -159,9 +159,12 @@ const zIndex = {
 
 const darkTheme = { // 다크 모드시 스타일
   background: '#333036',
-  text: '#F5F5F5',
   backgroundElevated: '#4C494E',
-  textElevated: '#FFFFFF',
+  primary: '#FFFFFF',
+  secondary: '#E5E5E5',
+  teritary: '#ADACAF',
+  muted: '#858386',
+  faint: '#676668',
   color,
   typography,
   spacer,
@@ -172,9 +175,12 @@ const darkTheme = { // 다크 모드시 스타일
 
 const lightTheme = { // 라이트 모드시 스타일
   background: '#F5F5F5',
-  text: '#333036',
   backgroundElevated: '#FFFFFF',
-  textElevated: '#4C494E',
+  primary: '#333036',
+  secondary: '#676668',
+  teritary: '#ADACAF',
+  muted: '#C9C9CA',
+  faint: '#E5E5E5',
   color,
   typography,
   spacer,

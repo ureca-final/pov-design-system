@@ -11,8 +11,12 @@ interface TextStyle {
 declare module '@emotion/react' {
   export interface Theme {
     background: string;
-    text: string;
     backgroundElevated: string;
+    primary: string,
+    secondary: string,
+    teritary: string,
+    muted: string,
+    faint: string,
     textElevated: string;
     color: { [key: string]: string };
     typography: TextStyle;
