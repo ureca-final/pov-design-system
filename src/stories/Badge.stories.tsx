@@ -1,7 +1,6 @@
 import { containerStyle, informationStyle } from './styles';
-import type { Meta, StoryObj } from '@storybook/react';
-
 import Badge from '../components/Badge/Badge';
+import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
   title: 'Design System/Badge',
@@ -9,20 +8,23 @@ const meta = {
   argTypes: {
     variant: {
       control: { type: 'radio' },
-      options: ['default', 'primary', 'outline'],
-      description: 'Badge의 비주얼 스타일',
+      options: ['keyword', 'section'],
     },
     size: {
       control: { type: 'radio' },
       options: ['small', 'large'],
     },
-    children: {
-      control: { type: 'text' },
-      description: 'Badge에 표시할 내용',
+    cancel: {
+      control: { type: 'boolean' },
+      description: 'keyword/isNotCancel 상태의 활성 여부',
+    },
+    click: {
+      control: { type: 'boolean' },
+      description: 'section/isNotClicked 상태의 활성 여부',
     },
   },
   args: {
-    variant: 'default',
+    variant: 'keyword',
     size: 'small',
     children: 'Badge',
   },
@@ -34,27 +36,28 @@ type Story = StoryObj<typeof meta>;
 export const Playground: Story = {};
 
 export const Variants: Story = {
-  render: ({ children }) => (
-      <ul css={containerStyle}>
-        <li css={informationStyle}>
-          <h6>Default</h6>
-          <Badge variant="default">{children}</Badge>
-        </li>
-        <li css={informationStyle}>
-          <h6>Primary</h6>
-          <Badge variant="primary">{children}</Badge>
-        </li>
-        <li css={informationStyle}>
-          <h6>Secondary</h6>
-          <Badge variant="secondary">{children}</Badge>
-        </li>
-      </ul>
-    ),
-  argTypes: {
-    variant: {
-      control: false,
-    },
-  },
+  render: ({children}) => (
+    <ul css={containerStyle}>
+      <li css={informationStyle}>
+        <h6>keyword</h6>
+        <Badge variant="keyword" cancel={true}>
+          {children}
+        </Badge>
+        <Badge variant="keyword" cancel={false}>
+          {children}
+        </Badge>
+      </li>
+      <li css={informationStyle}>
+        <h6>section</h6>
+        <Badge variant="section" click={true}>
+          {children}
+        </Badge>
+        <Badge variant="section" click={false}>
+          {children}
+        </Badge>
+      </li>
+    </ul>
+  ),
 };
 
 export const Sizes: Story = {
@@ -81,17 +84,9 @@ export const Sizes: Story = {
   },
 };
 
-export const Default: Story = {
-  argTypes: {
-    variant: {
-      control: false,
-    },
-  },
-};
-
-export const Primary: Story = {
+export const keyword: Story = {
   args: {
-    variant: 'primary',
+    variant: 'keyword',
   },
   argTypes: {
     variant: {
@@ -100,9 +95,9 @@ export const Primary: Story = {
   },
 };
 
-export const Secondary: Story = {
+export const section: Story = {
   args: {
-    variant: 'secondary',
+    variant: 'section',
   },
   argTypes: {
     variant: {
