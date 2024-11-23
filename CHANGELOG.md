@@ -1,3 +1,15 @@
+# v0.0.26 (Sat Nov 23 2024)
+
+#### 🐛 Bug Fix
+
+- fix: 디버깅 [#19](https://github.com/eureka-final/pov-design-system/pull/19) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.25 (Sat Nov 23 2024)
 
 #### 🐛 Bug Fix
