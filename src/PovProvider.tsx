@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from 'react';
 import { Global, ThemeProvider } from '@emotion/react';
 import type { PropsWithChildren } from 'react';
 import { GlobalStyle, StyleMode, TypeofTheme } from './styles/GlobalStyle';
-import { themes } from './styles/Theme';
+import { themes, ThemeType } from './styles/Theme';
 
 const ThemeContext = createContext<StyleMode | null>(null); //Context 생성
 
@@ -32,10 +32,17 @@ export const PovProvider = ({ children }: PovProviderProps) => {
   );
 };
 
+// PovProvider.tsx
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {
     throw new Error('useTheme must be used within a PovProvider');
   }
-  return context;
+
+  const { theme, toggleStyle } = context;
+
+  // 반환되는 theme 타입 설정
+  const themeObject: ThemeType = themes[theme]; // "light" 또는 "dark"에 따른 객체 반환
+  return { theme: themeObject, toggleStyle };
 };
+

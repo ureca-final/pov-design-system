@@ -1,33 +1,45 @@
-import { css } from '@emotion/react';
+import { css, SerializedStyles } from '@emotion/react';
+import { useTheme } from '../../PovProvider'; // 테마 훅 가져오기
 
-import type { BadgeProps } from '@components/Badge/Badge';
+export const getVariantStyling = (variant: 'keyword' | 'section', isActive: boolean) => {
+  const { theme } = useTheme(); // 테마 가져오기
 
-import { themes } from '../../styles/Theme';
-
-export const getVariantStyling = (variant: Required<BadgeProps>['variant']) => {
-  const style = {
-    default: css({
-      backgroundColor: themes.dark.color.green100,
-      color: themes.dark.color.green600,
+  const style: { [key in 'keyword' | 'section']: SerializedStyles } = {
+    keyword: css({
+      backgroundColor: isActive ? theme.color.green100 : theme.color.green100,
+      color: isActive ? theme.color.green600 : theme.color.green600,
+      borderRadius: theme.borderRadius.large,
     }),
-    primary: css({
-      backgroundColor: themes.dark.color.green600,
-      color: themes.dark.color.green100,
-    }),
-    secondary: css({
-      backgroundColor: themes.dark.faint,
-      color: themes.dark.teritary,
+    section: css({
+      backgroundColor: isActive ? theme.color.green600 : theme.faint,
+      color: isActive ? theme.color.green100 : theme.teritary,
+      borderRadius: theme.borderRadius.large,
     }),
   };
 
-  return style[variant];
+  return style[variant] || css({});
 };
 
-export const badgeStyling = css({
-  padding: `4px 10px`,
-  borderRadius: themes.dark.borderRadius.large,
+export const getSizeStyling = (size: 'small' | 'large') => {
+  const { theme } = useTheme(); // 테마 가져오기
+  const style = {
+    large: css({
+      padding: `10px 12px`,
+      fontSize: theme.typography.heading05.fontSize,
+      lineHeight: theme.typography.heading05.lineHeight,
+      fontWeight: theme.typography.heading05.fontWeight,
+    }),
+    small: css({
+      padding: `6px 8px`,
+      fontSize: theme.typography.badge.fontSize,
+      lineHeight: theme.typography.badge.lineHeight,
+      fontWeight: theme.typography.badge.fontWeight,
+    }),
+  };
 
-  fontSize: themes.dark.typography.badge.fontSize,
-  lineHeight: themes.dark.typography.badge.lineHeight,
-  fontWeight: themes.dark.typography.badge.fontWeight,
+  return style[size];
+};
+
+export const badgeStyling = () =>
+  css({
 });
