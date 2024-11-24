@@ -13,6 +13,7 @@ export default defineConfig({
     }),
     svgr(),
   ],
+  publicDir: 'public',
   resolve: {
     alias: {
       // 경로를 절대 경로로 설정
