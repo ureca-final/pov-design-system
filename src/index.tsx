@@ -12,9 +12,10 @@ import Heading from './components/Heading/Heading';
 import Body from './components/Body/Body';
 import Paragraph from './components/Paragraph/Paragraph';
 import Icon from './components/Icon/Icon';
+import Checkbox from './components/Checkbox/Checkbox';
 
 import { themes } from './styles/Theme';
 
 export { animation, icons };
 
-export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, themes, useTheme };
+export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, Checkbox, themes, useTheme };
