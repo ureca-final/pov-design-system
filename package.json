@@ -63,7 +63,6 @@
     "@storybook/react": "^8.4.4",
     "@storybook/react-vite": "^8.4.4",
     "@storybook/test": "^8.4.4",
-    "@svgr/rollup": "^8.1.0",
     "@types/node": "^22.9.0",
     "@vitejs/plugin-react": "^3.1.0",
     "auto": "^11.3.0",
