@@ -93,11 +93,11 @@ export const Color: StoryObj<typeof Icon> = {
   render: (args) => (
     <List>
       <Item>
-        <Icon icon="heartfill" color="red" {...args} />
+        <Icon color="red" {...args} />
         <span>Red</span>
       </Item>
       <Item>
-        <Icon icon="heartfill" color="#1BD27D" {...args} />
+        <Icon color="#1BD27D" {...args} />
         <span>Accent color</span>
       </Item>
     </List>
