@@ -13,7 +13,7 @@ const Path = styled.path`
   fill: currentColor;
 `;
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {
+export interface IconProps extends React.SVGProps<SVGSVGElement> {
   icon: keyof typeof icons;
   block?: boolean;
 }
@@ -21,9 +21,9 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 export const Icon: React.FC<IconProps> = ({ icon, block = false, ...props }) => {
   return (
     <Svg
-      viewBox="0 0 1024 1024"
-      width="20px"
-      height="20px"
+      viewBox="0 0 24 24"
+      width="24px"
+      height="24px"
       block={block}
       {...props}
     >
