@@ -1,3 +1,15 @@
+# v0.0.30 (Sun Nov 24 2024)
+
+#### 🐛 Bug Fix
+
+- feat: postbuild.js 파일 생성하여 빌드 시 svg를 dist 폴더에 복사 [#25](https://github.com/eureka-final/pov-design-system/pull/25) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.29 (Sun Nov 24 2024)
 
 #### 🐛 Bug Fix
