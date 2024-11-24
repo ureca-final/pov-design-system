@@ -1,3 +1,16 @@
+# v0.0.34 (Sun Nov 24 2024)
+
+#### 🐛 Bug Fix
+
+- feat: icon color 지정 [#30](https://github.com/eureka-final/pov-design-system/pull/30) ([@dyeon-dev](https://github.com/dyeon-dev))
+- feat: icon color 지정 가능 [#29](https://github.com/eureka-final/pov-design-system/pull/29) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.33 (Sun Nov 24 2024)
 
 #### 🐛 Bug Fix
