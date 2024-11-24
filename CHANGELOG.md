@@ -1,3 +1,15 @@
+# v0.0.28 (Sun Nov 24 2024)
+
+#### 🐛 Bug Fix
+
+- feat: checbox export [#23](https://github.com/eureka-final/pov-design-system/pull/23) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.27 (Sun Nov 24 2024)
 
 #### 🐛 Bug Fix
