@@ -89,6 +89,25 @@ interface StoryArgs extends IconProps {
   'aria-label'?: string;
 }
 
+export const Color: StoryObj<typeof Icon> = {
+  render: (args) => (
+    <List>
+      <Item>
+        <Icon icon="heartfill" color="red" {...args} />
+        <span>Red</span>
+      </Item>
+      <Item>
+        <Icon icon="heartfill" color="#1BD27D" {...args} />
+        <span>Accent color</span>
+      </Item>
+    </List>
+  ),
+  args: {
+    icon: 'heartfill',
+    'aria-label': 'Heart',
+  },
+};
+
 export const Inline = {
   render: (args: StoryArgs): JSX.Element => (
     <>
