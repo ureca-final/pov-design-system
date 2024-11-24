@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { icons } from '../../assets/icons';
 
@@ -19,17 +20,35 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 export const Icon: React.FC<IconProps> = ({ icon, block = false, ...props }) => {
-  return (
-    <Svg
-      viewBox="0 0 24 24"
-      width="24px"
-      height="24px"
-      block={block}
-      {...props}
-    >
-      <Path d={icons[icon]} />
-    </Svg>
-  );
+  const iconData = icons[icon];
+
+  if (typeof iconData === 'string') {
+    // path string인 경우
+    return (
+      <Svg
+        viewBox="0 0 24 24"
+        width="24px"
+        height="24px"
+        block={block}
+        {...props}
+      >
+        <Path d={iconData} />
+      </Svg>
+    );
+  }
+
+  if (React.isValidElement(iconData)) {
+    // JSX.Element인 경우
+    return React.cloneElement(iconData, {
+      width: '24px',
+      height: '24px',
+      ...props,
+    });
+  }
+
+  // 예외 처리: icon이 정의되지 않은 경우
+  console.warn(`Icon "${icon}" not found in icons object.`);
+  return null;
 };
 
 export default Icon;
