@@ -1,3 +1,15 @@
+# v0.0.32 (Sun Nov 24 2024)
+
+#### 🐛 Bug Fix
+
+- fix: svg 파일 수동 이동 [#27](https://github.com/eureka-final/pov-design-system/pull/27) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.31 (Sun Nov 24 2024)
 
 #### 🐛 Bug Fix
