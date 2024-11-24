@@ -24,16 +24,13 @@ const Badge = ({
     console.error('Invalid children passed to Badge:', children);
     return null; // 잘못된 children이 전달되었을 경우 null 반환
   }
-  console.log(children); // children 값 확인
-  console.log(getVariantStyling(variant, isActive)); // 반환값 확인
-  console.log(getSizeStyling(size)); // 반환값 확인
   
   return (
     <span css={[badgeStyling, getVariantStyling(variant, isActive), getSizeStyling(size)]} {...attributes}>
       {variant === 'keyword' && isActive ? (
         <>
-          <span style={{ marginLeft: '4px' }}>× </span>
           {children}
+          <span style={{ marginLeft: '4px' }}>× </span>
         </>
       ) : (
         children

@@ -21,9 +21,9 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 export const Icon: React.FC<IconProps> = ({ icon, block = false, ...props }) => {
   return (
     <Svg
-      viewBox="0 0 1024 1024"
-      width="20px"
-      height="20px"
+      viewBox="0 0 17 17"
+      width="16px"
+      height="17px"
       block={block}
       {...props}
     >
