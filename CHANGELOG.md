@@ -1,3 +1,15 @@
+# v0.0.29 (Sun Nov 24 2024)
+
+#### 🐛 Bug Fix
+
+- fix: svg build dist [#24](https://github.com/eureka-final/pov-design-system/pull/24) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.28 (Sun Nov 24 2024)
 
 #### 🐛 Bug Fix
