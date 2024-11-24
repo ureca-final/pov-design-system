@@ -16,7 +16,7 @@ export const Avatar: React.FC<AvatarProps> = ({
   size = 'medium',
   ...props
 }) => {
-  let avatarFigure: React.ReactNode = <Icon icon="useralt" />;
+  let avatarFigure: React.ReactNode;
   const a11yProps: React.HTMLAttributes<HTMLDivElement> = {};
 
   if (loading) {
