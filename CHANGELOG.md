@@ -1,3 +1,16 @@
+# v0.0.27 (Sun Nov 24 2024)
+
+#### 🐛 Bug Fix
+
+- fix: TypeScript에 .svg import 지원 [#22](https://github.com/eureka-final/pov-design-system/pull/22) ([@dyeon-dev](https://github.com/dyeon-dev))
+- feat: 체크박스 컴포넌트 생성 [#21](https://github.com/eureka-final/pov-design-system/pull/21) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.26 (Sat Nov 23 2024)
 
 #### 🐛 Bug Fix
