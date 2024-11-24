@@ -15,7 +15,7 @@ export default defineConfig({
     svgr(),
     copy({
       targets: [
-        { src: 'public/assets/*.svg', dist: 'dist/assets' },  // SVG 파일 복사
+        { src: 'src/assets/*.svg', dest: 'dist/assets' },  // SVG 파일 복사
       ],
     }),
   ],
