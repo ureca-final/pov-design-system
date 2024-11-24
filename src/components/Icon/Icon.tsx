@@ -2,12 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { icons } from '../../assets/icons';
 
-const Svg = styled.svg<{ block?: boolean }>`
+const Svg = styled.svg<{ block?: boolean; color?: string }>`
   display: ${(props) => (props.block ? 'block' : 'inline-block')};
   vertical-align: middle;
 
   shape-rendering: inherit;
   transform: translate3d(0, 0, 0);
+  fill: ${(props) => props.color || 'currentColor'};
 `;
 
 const Path = styled.path`
@@ -17,9 +18,10 @@ const Path = styled.path`
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
   icon: keyof typeof icons;
   block?: boolean;
+  color?: string; 
 }
 
-export const Icon: React.FC<IconProps> = ({ icon, block = false, ...props }) => {
+export const Icon: React.FC<IconProps> = ({ icon, block = false, color, ...props }) => {
   const iconData = icons[icon];
 
   if (typeof iconData === 'string') {
@@ -30,6 +32,7 @@ export const Icon: React.FC<IconProps> = ({ icon, block = false, ...props }) => 
         width="24px"
         height="24px"
         block={block}
+        color={color}
         {...props}
       >
         <Path d={iconData} />
@@ -42,6 +45,7 @@ export const Icon: React.FC<IconProps> = ({ icon, block = false, ...props }) => 
     return React.cloneElement(iconData, {
       width: '24px',
       height: '24px',
+      style: { color },
       ...props,
     });
   }
