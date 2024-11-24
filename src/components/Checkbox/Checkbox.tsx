@@ -1,3 +1,6 @@
+import CheckedIcon from '../../assets/svg/checked-icon.svg?react';
+import UncheckedIcon from '../../assets/svg/unchecked-icon.svg?react';
+
 import type { ComponentPropsWithRef, ForwardedRef } from 'react';
 import { forwardRef, useCallback, useState } from 'react';
 
@@ -29,9 +32,9 @@ const Checkbox = (
         ref={ref}
       />
       {checked ? (
-        <img src="/assets/checked-icon.svg" alt="Checked Icon" onClick={handleChecked} style={{ maxWidth: '20px', maxHeight: '20px' }} />
+        <CheckedIcon onClick={handleChecked} />
       ) : (
-        <img src="/assets/unchecked-icon.svg" alt="unChecked Icon" onClick={handleChecked} style={{ maxWidth: '20px', maxHeight: '20px' }} />
+        <UncheckedIcon onClick={handleChecked} />
       )}
       {label && <span>{label}</span>}
     </label>

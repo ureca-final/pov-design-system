@@ -19,7 +19,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "vite build && node postbuild.js",
+    "build": "cross-env BABEL_ENV=production tsc && babel src -d dist",
     "watch": "rollup --watch -c --bundleConfigAsCjs",
     "clean": "rimraf ./dist",
     "prebuild": "npm run clean",
@@ -79,6 +79,7 @@
     "react-dom": "^18.0.0",
     "rimraf": "^3.0.2",
     "rollup": "^3.25.0",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-dts": "^5.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-tsconfig-paths": "^1.5.2",
