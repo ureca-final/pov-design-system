@@ -19,7 +19,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "cross-env BABEL_ENV=production tsc && babel src -d dist",
+    "build": "vite build && node postbuild.js",
     "watch": "rollup --watch -c --bundleConfigAsCjs",
     "clean": "rimraf ./dist",
     "prebuild": "npm run clean",

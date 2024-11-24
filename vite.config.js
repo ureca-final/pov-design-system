@@ -14,6 +14,23 @@ export default defineConfig({
     svgr(),
   ],
   publicDir: 'public',
+  build: {
+    lib: {
+      entry: 'src/index.tsx', // 라이브러리의 진입점
+      name: 'MyLibrary', // UMD 빌드를 위한 이름
+      fileName: (format) => `my-library.${format}.js`,
+    },
+    rollupOptions: {
+      // 외부 의존성을 설정
+      external: ['react', 'react-dom'], // React를 외부 모듈로 설정
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       // 경로를 절대 경로로 설정
