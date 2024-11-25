@@ -1,9 +1,9 @@
 import { useCallback, useState } from 'react';
 
-export const useSelect = (initialSelectedId: number | string | boolean) => {
+export const useToggle = (initialSelectedId: boolean) => {
   const [selected, setSelected] = useState(initialSelectedId);
 
-  const handleSelectClick = useCallback((selectedId: number | string | boolean) => {
+  const handleSelectClick = useCallback((selectedId: boolean) => {
     setSelected(selectedId);
   }, []);
 
