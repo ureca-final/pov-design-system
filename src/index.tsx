@@ -19,9 +19,10 @@ import Checkbox from './components/Checkbox/Checkbox';
 import Tab from './components/Tab/Tab';
 import Tabs from './components/Tabs/Tabs';
 import Toggle from './components/Toggle/Toggle';
+import ShowMoreBtn from './components/ShowMoreBtn/ShowMoreBtn';
 
 import { themes } from './styles/Theme';
 
 export { animation, icons };
 
-export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, Checkbox, Tab, Tabs, Toggle, useSelect, useToggle, themes, useTheme };
+export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, Checkbox, Tab, Tabs, Toggle, ShowMoreBtn, useSelect, useToggle, themes, useTheme };
