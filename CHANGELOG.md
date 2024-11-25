@@ -1,3 +1,15 @@
+# v0.0.38 (Mon Nov 25 2024)
+
+#### 🐛 Bug Fix
+
+- feat: ShowMoreBtn 컴포넌트 생성 [#38](https://github.com/eureka-final/pov-design-system/pull/38) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.37 (Mon Nov 25 2024)
 
 #### 🐛 Bug Fix
