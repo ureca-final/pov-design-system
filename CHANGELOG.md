@@ -1,3 +1,15 @@
+# v0.0.36 (Mon Nov 25 2024)
+
+#### 🐛 Bug Fix
+
+- feat: useSelect export [#34](https://github.com/eureka-final/pov-design-system/pull/34) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.35 (Mon Nov 25 2024)
 
 #### 🐛 Bug Fix
