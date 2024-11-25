@@ -1,3 +1,15 @@
+# v0.0.35 (Mon Nov 25 2024)
+
+#### 🐛 Bug Fix
+
+- feat: Tabs 컴포넌트 추가 [#32](https://github.com/eureka-final/pov-design-system/pull/32) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.34 (Sun Nov 24 2024)
 
 #### 🐛 Bug Fix
