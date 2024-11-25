@@ -1,3 +1,16 @@
+# v0.0.37 (Mon Nov 25 2024)
+
+#### 🐛 Bug Fix
+
+- fix: useSelect type 수정 [#36](https://github.com/eureka-final/pov-design-system/pull/36) ([@dyeon-dev](https://github.com/dyeon-dev))
+- feat: toggle 컴포넌트 생성 [#35](https://github.com/eureka-final/pov-design-system/pull/35) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.36 (Mon Nov 25 2024)
 
 #### 🐛 Bug Fix
