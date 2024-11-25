@@ -15,9 +15,10 @@ import Icon from './components/Icon/Icon';
 import Checkbox from './components/Checkbox/Checkbox';
 import Tab from './components/Tab/Tab';
 import Tabs from './components/Tabs/Tabs';
+import { useSelect } from './hooks/useSelect';
 
 import { themes } from './styles/Theme';
 
 export { animation, icons };
 
-export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, Checkbox, Tab, Tabs, themes, useTheme };
+export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, Checkbox, Tab, Tabs, useSelect, themes, useTheme };
