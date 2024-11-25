@@ -13,8 +13,9 @@ export const tabStyling = css({
   minWidth: 'max-content',
   padding: '12px 16px',
 
-  fontSize: themes.dark.typography.body03.fontSize,
-  lineHeight: themes.dark.typography.body03.lineHeight,
+  fontSize: themes.dark.typography.heading04.fontSize,
+  lineHeight: themes.dark.typography.heading04.lineHeight,
+  fontWeight: themes.dark.typography.heading04.fontWeight,
 
   transition: 'all .2s ease-in',
 
