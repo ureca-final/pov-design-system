@@ -20,9 +20,13 @@ import Tab from './components/Tab/Tab';
 import Tabs from './components/Tabs/Tabs';
 import Toggle from './components/Toggle/Toggle';
 import ShowMoreBtn from './components/ShowMoreBtn/ShowMoreBtn';
+import Input from './components/Input/Input';
+import Textarea from './components/Textarea/Textarea';
+import Label from './components/Label/Label';
+import SupportingText from './components/SupportingText/SupportingText';
 
 import { themes } from './styles/Theme';
 
 export { animation, icons };
 
-export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, Checkbox, Tab, Tabs, Toggle, ShowMoreBtn, useSelect, useToggle, themes, useTheme };
+export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, Checkbox, Tab, Tabs, Toggle, ShowMoreBtn, Input, Textarea, Label, SupportingText, useSelect, useToggle, themes, useTheme };

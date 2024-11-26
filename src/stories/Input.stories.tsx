@@ -112,7 +112,7 @@ export const Text: Story = {
 
 export const WithIcon: Story = {
   args: {
-    icon: <Icon icon="search" />,
+    icon: <Icon icon="search" color='#ADACAF'/>,
   },
   argTypes: {
     icon: {
@@ -148,7 +148,7 @@ export const WithLabelAndSupportingText: Story = {
 export const WithIconLabelAndSupportingText: Story = {
   args: {
     label: 'Label',
-    icon: <Icon icon="search" />,
+    icon: <Icon icon="search" color='#ADACAF' />,
     supportingText: 'Supporting Text',
     required: true,
   },

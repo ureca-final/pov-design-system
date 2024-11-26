@@ -63,7 +63,6 @@ export const getSizeStyling = (size: Required<InputProps>['size']) => {
 
       fontSize: themes.dark.typography.heading03.fontSize,
       lineHeight: themes.dark.typography.heading03.lineHeight,
-      fontWeight: themes.dark.typography.heading03.fontWeight,
     }),
 
     medium: css({
@@ -71,7 +70,6 @@ export const getSizeStyling = (size: Required<InputProps>['size']) => {
 
       fontSize: themes.dark.typography.heading04.fontSize,
       lineHeight: themes.dark.typography.heading04.lineHeight,
-      fontWeight: themes.dark.typography.heading04.fontWeight,
     }),
 
     small: css({
@@ -79,7 +77,6 @@ export const getSizeStyling = (size: Required<InputProps>['size']) => {
 
       fontSize: themes.dark.typography.heading05.fontSize,
       lineHeight: themes.dark.typography.heading05.lineHeight,
-      fontWeight: themes.dark.typography.heading05.fontWeight,
     }),
   };
 
