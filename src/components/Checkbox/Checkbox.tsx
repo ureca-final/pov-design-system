@@ -15,9 +15,9 @@ const Checkbox = (
 ) => {
   const [checked, setChecked] = useState(isChecked);
 
-  const handleChecked = useCallback(() => {
-    setChecked(!checked);
-  }, [checked]);
+  const handleToggle = useCallback(() => {
+    setChecked((prev) => !prev);
+  }, []);
 
   return (
     <label css={checkboxStyling} htmlFor={id}>
@@ -28,11 +28,12 @@ const Checkbox = (
         type="checkbox"
         {...attributes}
         ref={ref}
+        onChange={handleToggle}
       />
       {checked ? (
-        <Icon icon="checked" onClick={handleChecked}/>
+        <Icon icon="checked" onClick={handleToggle} />
       ) : (
-        <Icon icon="unchecked" onClick={handleChecked}/>
+        <Icon icon="unchecked" onClick={handleToggle} />
       )}
       {label && <span>{label}</span>}
     </label>
