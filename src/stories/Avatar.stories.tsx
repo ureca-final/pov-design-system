@@ -33,24 +33,9 @@ export const Sizes: Story = {
   ),
 };
 
-export const Loading: Story = {
-  args: {
-    loading: true,
-  },
-  render: (args) => (
-    <>
-      <Avatar {...args} size="large" />
-      <Avatar {...args} size="medium" />
-      <Avatar {...args} size="small" />
-      <Avatar {...args} size="tiny" />
-    </>
-  ),
-};
-
 export const Large: Story = {
   render: () => (
     <>
-      <Avatar loading size="large" />
       <Avatar
         size="large"
         username="Da Yeon"
