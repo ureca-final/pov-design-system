@@ -1,3 +1,15 @@
+# v0.0.39 (Tue Nov 26 2024)
+
+#### 🐛 Bug Fix
+
+- fix: avatar 사이즈 수정 및 warning 오류 해결 [#39](https://github.com/eureka-final/pov-design-system/pull/39) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.38 (Mon Nov 25 2024)
 
 #### 🐛 Bug Fix
