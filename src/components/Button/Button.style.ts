@@ -19,18 +19,6 @@ export const getVariantStyling = (variant: Required<ButtonProps>['variant']) => 
       },
     }),
     secondary: css({
-      backgroundColor: themes.dark.color.purple200,
-      color: themes.dark.color.purple500,
-
-      '&:hover:enabled': {
-        backgroundColor: themes.dark.color.purple300,
-      },
-
-      '&:focus': {
-        boxShadow: `0 0 0 3px ${themes.dark.color.purple300}`,
-      },
-    }),
-    default: css({
       backgroundColor: themes.dark.color.gray200,
       color: themes.dark.color.gray700,
 
@@ -54,18 +42,21 @@ export const getSizeStyling = (size: Required<ButtonProps>['size']) => {
       height: '56px',
       fontSize: themes.dark.typography.body01.fontSize,
       lineHeight: themes.dark.typography.body01.lineHeight,
+      fontWeight: themes.dark.typography.body01.fontWeight,
     }),
     medium: css({
       width: '200px',
       height: '56px',
       fontSize: themes.dark.typography.body02.fontSize,
       lineHeight: themes.dark.typography.body02.lineHeight,
+      fontWeight: themes.dark.typography.body02.fontWeight,
     }),
     small: css({
       width: '120px',
       height: '48px', 
       fontSize: themes.dark.typography.body04.fontSize,
       lineHeight: themes.dark.typography.body04.lineHeight,
+      fontWeight: themes.dark.typography.body04.fontWeight,
     }),
   };
 

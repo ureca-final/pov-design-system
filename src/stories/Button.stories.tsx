@@ -10,7 +10,7 @@ const meta = {
   argTypes: {
     variant: {
       control: { type: 'radio' },
-      options: ['default', 'primary', 'secondary'],
+      options: ['primary', 'secondary'],
     },
     size: {
       control: { type: 'radio' },
@@ -19,11 +19,15 @@ const meta = {
     children: {
       control: { type: 'text' },
     },
+    disabled: {
+      control: { type: 'boolean' },
+    },
   },
   args: {
     variant: 'primary',
     size: 'medium',
     children: 'Button',
+    disabled: false,
   },
 } satisfies Meta<typeof Button>;
 
@@ -44,23 +48,17 @@ const createButtonStory = (variant: ButtonProps['variant']) => ({
 export const Playground: Story = {};
 
 export const Variants: Story = {
-  render: ({ size, children }) => (
+  render: ({ size, children, disabled }) => (
     <ul css={containerStyle}>
       <li css={informationStyle}>
-        <h6>Default</h6>
-        <Button variant='default' size={size}>
-          {children}
-        </Button>
-      </li>
-      <li css={informationStyle}>
         <h6>Primary</h6>
-        <Button variant='primary' size={size}>
+        <Button variant='primary' size={size} disabled={disabled}>
           {children}
         </Button>
       </li>
       <li css={informationStyle}>
         <h6>Secondary</h6>
-        <Button variant='secondary' size={size}>
+        <Button variant='secondary' size={size} disabled={disabled}>
           {children}
         </Button>
       </li>
@@ -74,23 +72,23 @@ export const Variants: Story = {
 };
 
 export const Sizes: Story = {
-  render: ({ variant, children }) => (
+  render: ({ variant, children, disabled }) => (
     <ul css={containerStyle}>
       <li css={informationStyle}>
         <h6>Small</h6>
-        <Button variant={variant} size='small'>
+        <Button variant={variant} size='small' disabled={disabled}>
           {children}
         </Button>
       </li>
       <li css={informationStyle}>
         <h6>Medium</h6>
-        <Button variant={variant} size='medium'>
+        <Button variant={variant} size='medium' disabled={disabled}>
           {children}
         </Button>
       </li>
       <li css={informationStyle}>
         <h6>Large</h6>
-        <Button variant={variant} size='large'>
+        <Button variant={variant} size='large' disabled={disabled}>
           {children}
         </Button>
       </li>
@@ -103,7 +101,29 @@ export const Sizes: Story = {
   },
 };
 
-export const Default: Story = createButtonStory('default') as Story;
+export const Disabled: Story = {
+  render: ({ size, variant, children }) => (
+    <ul css={containerStyle}>
+      <li css={informationStyle}>
+        <h6>Disabled Primary</h6>
+        <Button variant="primary" size={size} disabled>
+          {children}
+        </Button>
+      </li>
+      <li css={informationStyle}>
+        <h6>Disabled Secondary</h6>
+        <Button variant="secondary" size={size} disabled>
+          {children}
+        </Button>
+      </li>
+    </ul>
+  ),
+  argTypes: {
+    disabled: {
+      control: false,
+    },
+  },
+};
 
 export const Primary: Story = createButtonStory('primary') as Story;
 
