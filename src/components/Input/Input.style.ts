@@ -39,7 +39,7 @@ export const inputWrapperStyling = (isError: Required<InputProps>['isError']) =>
       height: '16px',
     },
   });
-  };
+};
 
 export const getVariantStyling = (variant: Required<InputProps>['variant']) => {
   const { theme } = useTheme();
@@ -83,13 +83,18 @@ export const getSizeStyling = (size: Required<InputProps>['size']) => {
   return style[size];
 };
 
-export const getInputStyling = css({
+export const getInputStyling = () => {
+  const { theme } = useTheme();
+
+  return css({
   width: '100%',
   paddingLeft: 0,
   paddingRight: 0,
   border: 'none',
   borderRadius: themes.dark.borderRadius.small,
   outline: 0,
+  color: theme.primary,
 
   backgroundColor: 'transparent',
-});
+  });
+};

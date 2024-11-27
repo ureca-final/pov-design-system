@@ -9,5 +9,5 @@ export const getTextStyling = (isError: Required<SupportingTextProps>['isError']
     fontSize: themes.dark.typography.body04.fontSize,
     lineHeight: themes.dark.typography.body04.lineHeight,
     fontWeight: themes.dark.typography.body04.fontWeight,
-    color: isError ? themes.dark.color.red : themes.dark.color.gray600,
+    color: isError ? themes.dark.color.red : themes.dark.color.gray400,
   });
