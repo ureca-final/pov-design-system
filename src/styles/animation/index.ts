@@ -1,4 +1,3 @@
-// Handy CSS animations for micro-interactions
 import { css, keyframes } from '@emotion/react';
 
 export const spinnerRotation = keyframes`
