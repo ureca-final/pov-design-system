@@ -1,3 +1,15 @@
+# v0.0.41 (Wed Nov 27 2024)
+
+#### 🐛 Bug Fix
+
+- 40 input [#42](https://github.com/eureka-final/pov-design-system/pull/42) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.40 (Tue Nov 26 2024)
 
 #### 🐛 Bug Fix
