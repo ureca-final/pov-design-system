@@ -13,7 +13,7 @@ export const backdropStyling = css({
   width: '100%',
   height: '100%',
 
-  backgroundColor: 'rgba(0, 0, 0, .15)',
+  backgroundColor: 'rgba(0, 0, 0, .35)',
 
   cursor: 'pointer',
 });
@@ -40,6 +40,7 @@ export const dialogStyling = () => {
 
   backgroundColor: theme.backgroundElevated,
   boxShadow: themes.dark.boxShadow.shadow8,
+  color: theme.primary,
 
   animation: `${fadeIn} 0.2s ease-in`,
   });
