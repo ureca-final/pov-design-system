@@ -6,6 +6,7 @@ import * as animation from './styles/animation/index';
 
 import { useSelect } from './hooks/useSelect';
 import { useToggle } from './hooks/useToggle';
+import { useOverlay } from './hooks/useOverlay';
 
 import Button from './components/Button/Button';
 import Avatar from './components/Avatar/Avatar';
@@ -24,9 +25,35 @@ import Input from './components/Input/Input';
 import Textarea from './components/Textarea/Textarea';
 import Label from './components/Label/Label';
 import SupportingText from './components/SupportingText/SupportingText';
+import Modal from './components/Modal/Modal';
 
 import { themes } from './styles/Theme';
 
 export { animation, icons };
 
-export { PovProvider, Button, Avatar, AvatarList, Badge, Heading, Body, Paragraph, Icon, Checkbox, Tab, Tabs, Toggle, ShowMoreBtn, Input, Textarea, Label, SupportingText, useSelect, useToggle, themes, useTheme };
+export { 
+    PovProvider, 
+    Button, 
+    Avatar, 
+    AvatarList, 
+    Badge, 
+    Heading, 
+    Body, 
+    Paragraph, 
+    Icon, 
+    Checkbox, 
+    Tab, 
+    Tabs, 
+    Toggle, 
+    ShowMoreBtn,
+    Input, 
+    Textarea, 
+    Label, 
+    SupportingText, 
+    Modal, 
+    useSelect, 
+    useToggle, 
+    useOverlay, 
+    themes,
+    useTheme 
+};
