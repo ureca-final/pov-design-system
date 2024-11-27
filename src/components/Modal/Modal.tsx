@@ -7,7 +7,7 @@ import {
   backdropStyling,
   closeButtonStyling,
   dialogStyling,
-} from '@components/Modal/Modal.style';
+} from './Modal.style';
 
 export interface ModalProps extends ComponentPropsWithoutRef<'dialog'> {
   /**
