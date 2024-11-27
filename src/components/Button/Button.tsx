@@ -10,13 +10,13 @@ import {
 
 export interface ButtonProps extends ComponentPropsWithRef<'button'> {
   size?: Extract<Size, 'small' | 'medium' | 'large'>;
-  variant?: 'primary' | 'secondary' | 'default';
+  variant?: 'primary' | 'secondary';
 }
 
 const Button = (
   {
     size = 'medium',
-    variant = 'default',
+    variant = 'primary',
     children,
     ...attributes
   }: ButtonProps,
