@@ -1,3 +1,15 @@
+# v0.0.49 (Thu Nov 28 2024)
+
+#### 🐛 Bug Fix
+
+- style: tabs border 수정 [#52](https://github.com/eureka-final/pov-design-system/pull/52) ([@shinhm1](https://github.com/shinhm1))
+
+#### Authors: 1
+
+- hmin___ ([@shinhm1](https://github.com/shinhm1))
+
+---
+
 # v0.0.48 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
