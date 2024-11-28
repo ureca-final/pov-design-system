@@ -15,13 +15,16 @@ export const GlobalStyle = (theme: TypeofTheme) => css`
     box-sizing: border-box;
   }
 
-  ul, ol, li {
+  ul,
+  ol,
+  li {
     list-style: none;
   }
 
-  html, body {
+  html,
+  body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Pretendard';
-    font-size: 16px;
+    font-size: 62.5%; /* 16px * 0.625 = 10px */
     color: ${themes[theme].primary};
     background-color: ${themes[theme].background};
   }
