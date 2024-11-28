@@ -1,3 +1,15 @@
+# v0.0.45 (Thu Nov 28 2024)
+
+#### 🐛 Bug Fix
+
+- fix: import 경로수정 [#47](https://github.com/eureka-final/pov-design-system/pull/47) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.44 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
