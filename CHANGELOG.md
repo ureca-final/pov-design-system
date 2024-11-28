@@ -1,3 +1,15 @@
+# v0.0.51 (Thu Nov 28 2024)
+
+#### 🐛 Bug Fix
+
+- style: tab padding, button font 수정 [#54](https://github.com/eureka-final/pov-design-system/pull/54) ([@shinhm1](https://github.com/shinhm1))
+
+#### Authors: 1
+
+- hmin___ ([@shinhm1](https://github.com/shinhm1))
+
+---
+
 # v0.0.50 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
