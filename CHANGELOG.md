@@ -1,3 +1,15 @@
+# v0.0.46 (Thu Nov 28 2024)
+
+#### 🐛 Bug Fix
+
+- style: badge [#48](https://github.com/eureka-final/pov-design-system/pull/48) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.45 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
