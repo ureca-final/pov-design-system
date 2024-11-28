@@ -1,3 +1,15 @@
+# v0.0.48 (Thu Nov 28 2024)
+
+#### 🐛 Bug Fix
+
+- style: tab 수정 [#51](https://github.com/eureka-final/pov-design-system/pull/51) ([@shinhm1](https://github.com/shinhm1))
+
+#### Authors: 1
+
+- hmin___ ([@shinhm1](https://github.com/shinhm1))
+
+---
+
 # v0.0.47 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
