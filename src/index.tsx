@@ -2,6 +2,7 @@ import { PovProvider } from './PovProvider';
 import { useTheme } from './PovProvider';
 
 import * as icons from './assets/icons';
+import * as characters from './assets/characters';
 import * as animation from './styles/animation/index';
 
 import { useSelect } from './hooks/useSelect';
@@ -26,10 +27,11 @@ import Textarea from './components/Textarea/Textarea';
 import Label from './components/Label/Label';
 import SupportingText from './components/SupportingText/SupportingText';
 import Modal from './components/Modal/Modal';
+import Logo from './components/Logo/Logo';
 
 import { themes } from './styles/Theme';
 
-export { animation, icons };
+export { animation, icons, characters };
 
 export { 
     PovProvider, 
@@ -50,7 +52,8 @@ export {
     Textarea, 
     Label, 
     SupportingText, 
-    Modal, 
+    Modal,
+    Logo,
     useSelect, 
     useToggle, 
     useOverlay, 
