@@ -1,3 +1,15 @@
+# v0.0.50 (Thu Nov 28 2024)
+
+#### 🐛 Bug Fix
+
+- style: input 컴포넌트 error 색상 변경 [#53](https://github.com/eureka-final/pov-design-system/pull/53) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.49 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
