@@ -7,7 +7,7 @@ import {
   closeButtonStyling,
   dialogStyling,
 } from './Modal.style';
-import { useTheme } from '@/PovProvider';
+import { useTheme } from '../../PovProvider';
 
 export interface ModalProps extends ComponentPropsWithoutRef<'dialog'> {
   /**
