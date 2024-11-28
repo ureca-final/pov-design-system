@@ -6,8 +6,8 @@ export const getVariantStyling = (variant: 'keyword' | 'section', isActive: bool
 
   const style: { [key in 'keyword' | 'section']: SerializedStyles } = {
     keyword: css({
-      backgroundColor: isActive ? theme.color.green100 : theme.color.green100,
-      color: isActive ? theme.color.green600 : theme.color.green600,
+      backgroundColor: isActive ? theme.color.green100 : theme.faint,
+      color: isActive ? theme.color.green600 : theme.teritary,
       borderRadius: theme.borderRadius.large,
     }),
     section: css({
