@@ -26,14 +26,10 @@ export const getVariantStyling = (variant: TabSelectedStylingProps, isSelected: 
   const { theme } = useTheme(); // 테마 가져오기
   const style = {
     outline: css({
-      borderBottom: `1px solid ${isSelected ? themes.dark.color.green600 : 'transparent'}`,
-
-      backgroundColor: theme.background,
-
-      color: isSelected ? themes.dark.color.green600 : themes.dark.color.gray500,
+      color: isSelected ? themes.dark.primary : themes.dark.muted,
 
       '&:hover': {
-        color: isSelected ? themes.dark.color.green600 : themes.dark.color.gray600,
+        color: isSelected ? themes.dark.secondary : themes.dark.teritary,
       },
     }),
 
