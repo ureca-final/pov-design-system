@@ -1,3 +1,15 @@
+# v0.0.47 (Thu Nov 28 2024)
+
+#### 🐛 Bug Fix
+
+- fix: svg path [#50](https://github.com/eureka-final/pov-design-system/pull/50) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.46 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
