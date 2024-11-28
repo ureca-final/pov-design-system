@@ -21,17 +21,17 @@ export const inputWrapperStyling = (isError: Required<InputProps>['isError']) =>
 
     paddingTop: 0,
     paddingBottom: 0,
-    borderRadius: themes.dark.borderRadius.small,
+    borderRadius: themes.dark.borderRadius.medium,
 
-    backgroundColor: isError ? `${themes.dark.color.red} !important` : 'transparent',
+    backgroundColor: isError ? `${theme.backgroundElevated} !important` : 'transparent',
 
     transition: 'all .2s ease-in',
 
     '&:focus-within': {
-      backgroundColor: isError ? themes.dark.color.red : theme.muted,
+      backgroundColor: isError ? themes.dark.color.red : theme.background,
       boxShadow: isError
-        ? `inset 0 0 0 1px ${themes.dark.color.red}`
-        : `inset 0 0 0 1px ${themes.dark.color.gray300}`,
+        ? `inset 0 0 0 2px ${themes.dark.color.red}`
+        : `inset 0 0 0 2px ${themes.dark.color.purple300}`,
     },
 
     '& svg': {
