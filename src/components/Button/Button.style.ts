@@ -40,23 +40,23 @@ export const getSizeStyling = (size: Required<ButtonProps>['size']) => {
     large: css({
       width: '320px',
       height: '56px',
-      fontSize: themes.dark.typography.body01.fontSize,
-      lineHeight: themes.dark.typography.body01.lineHeight,
-      fontWeight: themes.dark.typography.body01.fontWeight,
+      fontSize: themes.dark.typography.heading04.fontSize,
+      lineHeight: themes.dark.typography.heading04.lineHeight,
+      fontWeight: themes.dark.typography.heading04.fontWeight,
     }),
     medium: css({
       width: '200px',
       height: '56px',
-      fontSize: themes.dark.typography.body02.fontSize,
-      lineHeight: themes.dark.typography.body02.lineHeight,
-      fontWeight: themes.dark.typography.body02.fontWeight,
+      fontSize: themes.dark.typography.heading05.fontSize,
+      lineHeight: themes.dark.typography.heading05.lineHeight,
+      fontWeight: themes.dark.typography.heading05.fontWeight,
     }),
     small: css({
       width: '120px',
-      height: '48px', 
-      fontSize: themes.dark.typography.body04.fontSize,
-      lineHeight: themes.dark.typography.body04.lineHeight,
-      fontWeight: themes.dark.typography.body04.fontWeight,
+      height: '48px',
+      fontSize: themes.dark.typography.heading05.fontSize,
+      lineHeight: themes.dark.typography.heading05.lineHeight,
+      fontWeight: themes.dark.typography.heading05.fontWeight,
     }),
   };
 
