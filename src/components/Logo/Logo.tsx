@@ -18,7 +18,7 @@ const Path = styled.path`
 export interface CharacterProps extends React.SVGProps<SVGSVGElement> {
   icon: keyof typeof characters;
   block?: boolean;
-  color?: string; 
+  color?: string;
 }
 
 export const Logo: React.FC<CharacterProps> = ({ icon, block = false, color, ...props }) => {

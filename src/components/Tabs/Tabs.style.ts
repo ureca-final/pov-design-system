@@ -6,7 +6,6 @@ export const containerStyling = css({
   display: 'flex',
 
   width: 'max-content',
-  borderBottom: `1px solid ${themes.dark.color.gray200}`,
 
   overflowX: 'scroll',
   msOverflowStyle: 'none',
