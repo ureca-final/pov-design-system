@@ -2,12 +2,12 @@ import Icon from '../Icon/Icon';
 import type { ComponentPropsWithoutRef } from 'react';
 import { useCallback, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-
 import {
   backdropStyling,
   closeButtonStyling,
   dialogStyling,
 } from './Modal.style';
+import { useTheme } from '@/PovProvider';
 
 export interface ModalProps extends ComponentPropsWithoutRef<'dialog'> {
   /**
@@ -39,6 +39,7 @@ const Modal = ({
   children,
   ...attributes
 }: ModalProps) => {
+  const { theme } = useTheme();
   const handleEscKeyPress = useCallback(
     (event: KeyboardEvent) => {
       if (event.key === 'Escape' && isBackdropClosable) {
@@ -73,7 +74,7 @@ const Modal = ({
                 onClick={closeModal}
                 css={closeButtonStyling}
               >
-                <Icon icon="cross" />
+                <Icon icon="cross" color={theme.primary} />
               </button>
             )}
             {children}

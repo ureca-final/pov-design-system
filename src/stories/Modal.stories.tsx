@@ -39,7 +39,7 @@ export const ImageModal: Story = {
         <Button onClick={open}>Show Modal</Button>
         <Modal {...args} isOpen={isOpen} closeModal={close}>
           <div css={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <Heading size="large">Title</Heading>
+            <Heading size="medium">Title</Heading>
             <SampleImage />
             <Button variant="primary" onClick={close} css={{ width: '100%' }}>
               확인
@@ -60,7 +60,7 @@ export const NoCloseButton: Story = {
         <Button onClick={open}>Show Modal</Button>
         <Modal {...args} isOpen={isOpen} closeModal={close} hasCloseButton={false}>
           <div css={containerStyle}>
-            <Heading size="large">Title</Heading>
+            <Heading size="medium">Title</Heading>
             <Body>Sample Text</Body>
             <Button variant="primary" onClick={close} css={{ width: '100%' }}>
               확인
@@ -81,7 +81,7 @@ export const TextModal: Story = {
         <Button onClick={open}>Show Modal</Button>
         <Modal {...args} isOpen={isOpen} closeModal={close}>
           <div css={[containerStyle, { width: '350px' }]}>
-            <Heading size="large">Title</Heading>
+            <Heading size="medium">Title</Heading>
             <Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -117,8 +117,8 @@ export const ModalOpenStart: Story = {
       <>
         <Button onClick={open}>Show Modal</Button>
         <Modal {...args} isOpen={isOpen} closeModal={close}>
-          <div css={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <Heading size="large">Title</Heading>
+          <div css={containerStyle}>
+            <Heading size="medium">Title</Heading>
             <Button variant="primary" onClick={close} css={{ width: '100%' }}>
               확인
             </Button>
