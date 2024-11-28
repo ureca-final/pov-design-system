@@ -29,8 +29,8 @@ const Badge = ({
     <span css={[badgeStyling, getVariantStyling(variant, isActive), getSizeStyling(size)]} {...attributes}>
       {variant === 'keyword' && isActive ? (
         <>
+          <span style={{ marginLeft: '4px' }}># </span>
           {children}
-          <span style={{ marginLeft: '4px' }}>× </span>
         </>
       ) : (
         children
