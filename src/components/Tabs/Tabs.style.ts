@@ -4,6 +4,7 @@ import { themes } from '../../styles/Theme';
 
 export const containerStyling = css({
   display: 'flex',
+  gap: '16px',
 
   width: 'max-content',
 
