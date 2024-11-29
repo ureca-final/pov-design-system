@@ -20,7 +20,7 @@ import Icon from './components/Icon/Icon';
 import Checkbox from './components/Checkbox/Checkbox';
 import Tab from './components/Tab/Tab';
 import Tabs from './components/Tabs/Tabs';
-import Toggle from './components/Toggle/Toggle';
+import SwitchToggle from './components/SwitchToggle/SwitchToggle';
 import ShowMoreBtn from './components/ShowMoreBtn/ShowMoreBtn';
 import Input from './components/Input/Input';
 import Textarea from './components/Textarea/Textarea';
@@ -46,7 +46,7 @@ export {
     Checkbox, 
     Tab, 
     Tabs, 
-    Toggle, 
+    SwitchToggle, 
     ShowMoreBtn,
     Input, 
     Textarea, 
