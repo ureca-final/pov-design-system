@@ -1,3 +1,15 @@
+# v0.0.52 (Fri Nov 29 2024)
+
+#### 🐛 Bug Fix
+
+- 43 modal [#55](https://github.com/eureka-final/pov-design-system/pull/55) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.51 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
