@@ -6,7 +6,6 @@ import * as characters from './assets/characters';
 import * as animation from './styles/animation/index';
 
 import { useSelect } from './hooks/useSelect';
-import { useToggle } from './hooks/useToggle';
 import { useOverlay } from './hooks/useOverlay';
 
 import Button from './components/Button/Button';
@@ -55,7 +54,6 @@ export {
     Modal,
     Logo,
     useSelect, 
-    useToggle, 
     useOverlay, 
     themes,
     useTheme 
