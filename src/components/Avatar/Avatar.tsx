@@ -5,12 +5,14 @@ export interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
   username?: string;
   src?: string | null;
   size?: keyof typeof sizes;
+  selected?: boolean;
 }
 
 export const Avatar: React.FC<AvatarProps> = ({
   username = 'loading',
   src = null,
   size = 'medium',
+  selected = false,
   ...props
 }) => {
   let avatarFigure: React.ReactNode;
@@ -21,7 +23,7 @@ export const Avatar: React.FC<AvatarProps> = ({
   }
 
   return (
-    <Image size={size} src={src} {...a11yProps} {...props}>
+    <Image size={size} src={src} selected= {selected} {...a11yProps} {...props}>
       {avatarFigure}
     </Image>
   );
