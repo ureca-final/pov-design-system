@@ -33,13 +33,14 @@ export const Sizes: Story = {
   ),
 };
 
-export const Large: Story = {
+export const Circle: Story = {
   render: () => (
     <>
       <Avatar
-        size="large"
+        size="medium"
         username="Da Yeon"
         src="https://avatars.githubusercontent.com/u/93921784?v=4"
+        selected={true}
       />
     </>
   ),

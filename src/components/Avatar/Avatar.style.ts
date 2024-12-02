@@ -8,8 +8,9 @@ export const sizes = {
   tiny: 24,
 };
 
-export const Image = styled.div<{ size: keyof typeof sizes; src?: string | null }>`
+export const Image = styled.div<{ size: keyof typeof sizes; src?: string | null; selected?: boolean }>`
   border-radius: 50%;
+  border: ${(props) => (props.selected ? `3px solid ${themes.dark.color.green600}` : 'none')};
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
