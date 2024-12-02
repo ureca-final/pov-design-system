@@ -1,3 +1,15 @@
+# v0.0.53 (Mon Dec 02 2024)
+
+#### 🐛 Bug Fix
+
+- style: Avatar selected [#56](https://github.com/eureka-final/pov-design-system/pull/56) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.52 (Fri Nov 29 2024)
 
 #### 🐛 Bug Fix
