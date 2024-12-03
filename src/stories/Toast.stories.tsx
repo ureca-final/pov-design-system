@@ -1,4 +1,4 @@
-import CheckCircleIcon from '@assets/svg/check-circle-icon.svg';
+import Icon from '@components/Icon/Icon';
 import { containerStyle } from '@stories/styles';
 import type { Meta, StoryObj } from '@storybook/react';
 
@@ -164,7 +164,7 @@ export const WithIcon: Story = {
         <Button onClick={open}>Show Toast</Button>
         {isOpen && (
           <Toast {...args} onClose={close}>
-            <CheckCircleIcon />
+            <Icon icon="warning" />
             Message
           </Toast>
         )}
