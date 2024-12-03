@@ -1,3 +1,15 @@
+# v0.0.54 (Tue Dec 03 2024)
+
+#### 🐛 Bug Fix
+
+- feat: toast 컴포넌트 생성 [#58](https://github.com/eureka-final/pov-design-system/pull/58) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.53 (Mon Dec 02 2024)
 
 #### 🐛 Bug Fix
