@@ -3,6 +3,7 @@ import { Global, ThemeProvider } from '@emotion/react';
 import type { PropsWithChildren } from 'react';
 import { GlobalStyle, StyleMode, TypeofTheme } from './styles/GlobalStyle';
 import { themes, ThemeType } from './styles/Theme';
+import ToastContainer from './components/ToastContainer/ToastContainer';
 
 const ThemeContext = createContext<StyleMode | null>(null); //Context 생성
 
@@ -27,6 +28,7 @@ export const PovProvider = ({ children }: PovProviderProps) => {
       <ThemeProvider theme={themes[theme]}>
         <Global styles={GlobalStyle(theme)} />
         {children}
+        <ToastContainer />
       </ThemeProvider>
     </ThemeContext.Provider>
   );

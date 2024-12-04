@@ -27,6 +27,7 @@ import Label from './components/Label/Label';
 import SupportingText from './components/SupportingText/SupportingText';
 import Modal from './components/Modal/Modal';
 import Logo from './components/Logo/Logo';
+import Toast from './components/Toast/Toast';
 
 import { themes } from './styles/Theme';
 
@@ -53,6 +54,7 @@ export {
     SupportingText, 
     Modal,
     Logo,
+    Toast,
     useSelect, 
     useOverlay, 
     themes,
