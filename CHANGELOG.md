@@ -1,3 +1,15 @@
+# v0.0.55 (Wed Dec 04 2024)
+
+#### 🐛 Bug Fix
+
+- feat: povprovider에 toast 제공 [#59](https://github.com/eureka-final/pov-design-system/pull/59) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.54 (Tue Dec 03 2024)
 
 #### 🐛 Bug Fix
