@@ -1,3 +1,15 @@
+# v0.0.56 (Thu Dec 05 2024)
+
+#### 🐛 Bug Fix
+
+- fix: input style 속성 변경 [#60](https://github.com/eureka-final/pov-design-system/pull/60) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.55 (Wed Dec 04 2024)
 
 #### 🐛 Bug Fix
