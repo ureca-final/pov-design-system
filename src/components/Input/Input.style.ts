@@ -15,7 +15,8 @@ export const inputWrapperStyling = (isError: Required<InputProps>['isError']) =>
   const { theme } = useTheme();
 
   return css({
-    display: 'flex',
+    flex: 1,
+    width: '100%',
     gap: '12px',
     alignItems: 'center',
 
