@@ -2,13 +2,7 @@ import type { Size } from '../../types/index';
 import type { ComponentPropsWithRef, ForwardedRef, ReactElement } from 'react';
 import { forwardRef } from 'react';
 
-import {
-  getInputStyling,
-  getSizeStyling,
-  getVariantStyling,
-  inputContainerStyling,
-  inputWrapperStyling,
-} from './Input.style';
+import { getInputStyling, getSizeStyling, getVariantStyling, inputContainerStyling, inputWrapperStyling } from './Input.style';
 import Label from '../Label/Label';
 import SupportingText from '../SupportingText/SupportingText';
 
@@ -21,30 +15,21 @@ export interface InputProps extends Omit<ComponentPropsWithRef<'input'>, 'size'>
   supportingText?: string;
 }
 
-const Input = (
-  {
-    label,
-    variant = 'default',
-    size = 'medium',
-    isError = false,
-    icon,
-    supportingText,
-    ...attributes
-  }: InputProps,
-  ref: ForwardedRef<HTMLInputElement>
-) => (
-  <div css={inputContainerStyling}>
-    {label && (
-      <Label id={attributes.id} required={attributes.required}>
-        {label}
-      </Label>
-    )}
-    <div css={[getSizeStyling(size), inputWrapperStyling(isError), getVariantStyling(variant)]}>
-      {icon}
-      <input ref={ref} css={[getSizeStyling(size), getInputStyling]} {...attributes} />
+const Input = forwardRef<HTMLInputElement, InputProps>(
+  ({ label, variant = 'default', size = 'medium', isError = false, icon, supportingText, ...attributes }: InputProps, ref) => (
+    <div css={inputContainerStyling}>
+      {label && (
+        <Label id={attributes.id} required={attributes.required}>
+          {label}
+        </Label>
+      )}
+      <div css={[getSizeStyling(size), inputWrapperStyling(isError), getVariantStyling(variant)]}>
+        {icon}
+        <input ref={ref} css={[getSizeStyling(size), getInputStyling]} {...attributes} />
+      </div>
+      {supportingText && <SupportingText isError={isError}>{supportingText}</SupportingText>}
     </div>
-    {supportingText && <SupportingText isError={isError}>{supportingText}</SupportingText>}
-  </div>
+  )
 );
 
-export default forwardRef(Input);
+export default Input;
