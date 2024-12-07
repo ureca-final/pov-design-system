@@ -1,3 +1,15 @@
+# v0.0.57 (Sat Dec 07 2024)
+
+#### 🐛 Bug Fix
+
+- fix: Input의 ref 속성을 부모 컴포넌트로 전달하도록 수정 [#62](https://github.com/eureka-final/pov-design-system/pull/62) ([@shinhm1](https://github.com/shinhm1))
+
+#### Authors: 1
+
+- hmin___ ([@shinhm1](https://github.com/shinhm1))
+
+---
+
 # v0.0.56 (Thu Dec 05 2024)
 
 #### 🐛 Bug Fix
