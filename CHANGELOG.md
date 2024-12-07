@@ -1,3 +1,15 @@
+# v0.0.58 (Sat Dec 07 2024)
+
+#### 🐛 Bug Fix
+
+- fix: Input 컴포넌트의 isError, supportingText 변경 시에도 focus가 사라지지 않도록 수정 [#63](https://github.com/eureka-final/pov-design-system/pull/63) ([@shinhm1](https://github.com/shinhm1))
+
+#### Authors: 1
+
+- hmin___ ([@shinhm1](https://github.com/shinhm1))
+
+---
+
 # v0.0.57 (Sat Dec 07 2024)
 
 #### 🐛 Bug Fix
