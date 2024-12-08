@@ -1,3 +1,15 @@
+# v0.0.60 (Sun Dec 08 2024)
+
+#### 🐛 Bug Fix
+
+- style: user 속성 변경 [#66](https://github.com/eureka-final/pov-design-system/pull/66) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.59 (Sun Dec 08 2024)
 
 #### 🐛 Bug Fix
