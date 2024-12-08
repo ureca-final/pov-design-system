@@ -1,3 +1,16 @@
+# v0.0.59 (Sun Dec 08 2024)
+
+#### 🐛 Bug Fix
+
+- chore: emtion update [#65](https://github.com/eureka-final/pov-design-system/pull/65) ([@dyeon-dev](https://github.com/dyeon-dev))
+- chore: emotion 패키지 업데이트 [#64](https://github.com/eureka-final/pov-design-system/pull/64) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.58 (Sat Dec 07 2024)
 
 #### 🐛 Bug Fix
