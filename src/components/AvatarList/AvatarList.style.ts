@@ -3,7 +3,7 @@ import { Avatar } from '../Avatar/Avatar';
 import { themes } from '../../styles/Theme';
 
 export const UserAvatar = styled(Avatar)`
-  box-shadow: ${themes.dark.color.gray100} 0 0 0 2px;
+  box-shadow: ${themes.dark.color.gray300} 0 0 0 1px;
   display: block;
 `;
 
@@ -11,8 +11,9 @@ export const UserEllipses = styled.li`
   display: inline-flex;
   font-size: ${themes.dark.typography.body02}px;
   color: ${themes.dark.color.gray400};
-  margin-left: 6px;
   white-space: nowrap;
+  position: relative;
+  left: 15px;
 `;
 
 export const User = styled.li`
@@ -30,7 +31,7 @@ export const Users = styled.ul`
   padding: 0;
   list-style: none;
 
-  ${User} {
+  li {
     position: relative;
 
     &:not(:first-child) {
