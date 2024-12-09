@@ -29,6 +29,7 @@ export const Image: Story = {
   args: {
     width: '168px',
     height: '260px',
+    variant: "square"
   },
 };
 
