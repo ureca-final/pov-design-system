@@ -1,3 +1,15 @@
+# v0.0.62 (Mon Dec 09 2024)
+
+#### 🐛 Bug Fix
+
+- feat: export 컴포넌트 [#69](https://github.com/eureka-final/pov-design-system/pull/69) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.61 (Mon Dec 09 2024)
 
 #### 🐛 Bug Fix
