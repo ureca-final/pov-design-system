@@ -1,3 +1,15 @@
+# v0.0.61 (Mon Dec 09 2024)
+
+#### 🐛 Bug Fix
+
+- style: 스켈레톤 컴포넌트 구현 [#68](https://github.com/eureka-final/pov-design-system/pull/68) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.60 (Sun Dec 08 2024)
 
 #### 🐛 Bug Fix
