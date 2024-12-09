@@ -1,3 +1,15 @@
+# v0.0.63 (Mon Dec 09 2024)
+
+#### 🐛 Bug Fix
+
+- fix: 스켈레톤 색상 변경 [#70](https://github.com/eureka-final/pov-design-system/pull/70) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.62 (Mon Dec 09 2024)
 
 #### 🐛 Bug Fix
