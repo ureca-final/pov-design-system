@@ -28,6 +28,7 @@ import SupportingText from './components/SupportingText/SupportingText';
 import Modal from './components/Modal/Modal';
 import Logo from './components/Logo/Logo';
 import Toast from './components/Toast/Toast';
+import Skeleton from './components/Skeleton/Skeleton';
 
 import { themes } from './styles/Theme';
 
@@ -55,6 +56,7 @@ export {
     Modal,
     Logo,
     Toast,
+    Skeleton,
     useSelect, 
     useOverlay, 
     themes,
