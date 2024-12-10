@@ -1,3 +1,15 @@
+# v0.0.64 (Tue Dec 10 2024)
+
+#### 🐛 Bug Fix
+
+- 67 skeleton [#72](https://github.com/eureka-final/pov-design-system/pull/72) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.63 (Mon Dec 09 2024)
 
 #### 🐛 Bug Fix
