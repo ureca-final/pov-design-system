@@ -37,13 +37,13 @@ export const Users = styled.ul`
     &:not(:first-child) {
       margin-left: -6px;
     }
-    &:nth-of-type(1) {
+    &:nth-child(1) {
       z-index: 3;
     }
-    &:nth-of-type(2) {
+    &:nth-child(2) {
       z-index: 2;
     }
-    &:nth-of-type(3) {
+    &:nth-child(3) {
       z-index: 1;
     }
   }
