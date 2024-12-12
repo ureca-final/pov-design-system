@@ -15,6 +15,7 @@ export const Image = styled.div<{ size: keyof typeof sizes; src?: string | null;
   vertical-align: top;
   overflow: hidden;
   text-transform: uppercase;
+  
 
   height: ${(props) => sizes[props.size]}px;
   width: ${(props) => sizes[props.size]}px;
@@ -24,6 +25,8 @@ export const Image = styled.div<{ size: keyof typeof sizes; src?: string | null;
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
+    aspect-ratio: 1/1;
   }
 
   svg {
