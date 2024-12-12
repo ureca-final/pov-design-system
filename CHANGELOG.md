@@ -1,3 +1,15 @@
+# v0.0.65 (Thu Dec 12 2024)
+
+#### 🐛 Bug Fix
+
+- fix: Avatar 이미지 1:1 비율 기능 추가 [#73](https://github.com/eureka-final/pov-design-system/pull/73) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.64 (Tue Dec 10 2024)
 
 #### 🐛 Bug Fix
