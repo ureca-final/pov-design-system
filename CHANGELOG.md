@@ -1,3 +1,15 @@
+# v0.0.66 (Fri Dec 13 2024)
+
+#### 🐛 Bug Fix
+
+- style: 아이콘 추가 [#74](https://github.com/eureka-final/pov-design-system/pull/74) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.65 (Thu Dec 12 2024)
 
 #### 🐛 Bug Fix
