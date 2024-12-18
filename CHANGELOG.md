@@ -1,3 +1,15 @@
+# v0.1.1 (Wed Dec 18 2024)
+
+#### 🐛 Bug Fix
+
+- fix: ShowMoreButton, Toast 컴포넌트 폰트 크기 수정 [#81](https://github.com/eureka-final/pov-design-system/pull/81) ([@shinhm1](https://github.com/shinhm1))
+
+#### Authors: 1
+
+- hmin___ ([@shinhm1](https://github.com/shinhm1))
+
+---
+
 # v0.1.0 (Wed Dec 18 2024)
 
 #### 🚀 Enhancement
