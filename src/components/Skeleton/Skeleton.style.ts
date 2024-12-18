@@ -20,7 +20,7 @@ export const getSkeletonStyling = (width: string, height: string, variant: 'squa
     height: variant === 'square' ? height : width,
     borderRadius: variant === 'square' ? themes.dark.spacer.spacing2 : '50%',
 
-    background: `linear-gradient(-90deg, ${themes.dark.teritary}, ${themes.dark.muted}, ${themes.dark.faint}, ${themes.dark.backgroundElevated})`,
+    background: `linear-gradient(-90deg, ${themes.dark.faint}, ${themes.dark.muted}, ${themes.dark.faint}, ${themes.dark.backgroundElevated})`,
     backgroundSize: '400%',
 
     animation: `${skeletonAnimation} 3s infinite ease-out`,
