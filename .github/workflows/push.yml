@@ -35,9 +35,6 @@ jobs:
           #👇 npm token, see https://storybook.js.org/tutorials/design-systems-for-developers/react/ko/distribute/ to obtain it
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-              npm install
-              npm run build
-              npx auto version --use-version 0.1.0
-              npx auto changelog
-              git push --follow-tags --set-upstream origin main
-              npm publish
+          npm install
+          npm run build
+          npm run release
