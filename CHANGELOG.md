@@ -1,3 +1,15 @@
+# v0.0.67 (Wed Dec 18 2024)
+
+#### 🐛 Bug Fix
+
+- style: 스켈레톤, 모달 CSS 수정 [#76](https://github.com/eureka-final/pov-design-system/pull/76) ([@shinhm1](https://github.com/shinhm1))
+
+#### Authors: 1
+
+- hmin___ ([@shinhm1](https://github.com/shinhm1))
+
+---
+
 # v0.0.66 (Fri Dec 13 2024)
 
 #### 🐛 Bug Fix
