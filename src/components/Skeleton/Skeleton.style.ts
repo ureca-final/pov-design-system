@@ -14,12 +14,13 @@ export const skeletonAnimation = keyframes`
   }
 `;
 
-export const getSkeletonStyling = (width: string, height: string, variant: 'square' | 'circle') => css({
+export const getSkeletonStyling = (width: string, height: string, variant: 'square' | 'circle') =>
+  css({
     width,
     height: variant === 'square' ? height : width,
     borderRadius: variant === 'square' ? themes.dark.spacer.spacing2 : '50%',
 
-    background: `linear-gradient(-90deg, ${themes.dark.secondary}, ${themes.dark.muted}, ${themes.dark.secondary}, ${themes.dark.backgroundElevated})`,
+    background: `linear-gradient(-90deg, ${themes.dark.faint}, ${themes.dark.muted}, ${themes.dark.faint}, ${themes.dark.backgroundElevated})`,
     backgroundSize: '400%',
 
     animation: `${skeletonAnimation} 3s infinite ease-out`,

@@ -13,7 +13,7 @@ export const backdropStyling = css({
   width: '100%',
   height: '100%',
 
-  backgroundColor: 'rgba(0, 0, 0, .35)',
+  backgroundColor: 'rgba(0, 0, 0, .5)',
 
   cursor: 'pointer',
 });
@@ -22,27 +22,27 @@ export const dialogStyling = () => {
   const { theme } = useTheme();
 
   return css({
-  position: 'fixed',
-  top: '50%',
-  transform: 'translateY(-50%)',
-  zIndex: themes.dark.zIndex.overlayTop,
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
+    position: 'fixed',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    zIndex: themes.dark.zIndex.overlayTop,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
 
-  minWidth: '300px',
-  padding: themes.dark.spacer.spacing4,
-  margin: '0 auto',
+    minWidth: '300px',
+    padding: themes.dark.spacer.spacing4,
+    margin: '0 auto',
 
-  border: 'none',
-  borderRadius: themes.dark.borderRadius.large,
+    border: 'none',
+    borderRadius: themes.dark.borderRadius.large,
 
-  backgroundColor: theme.backgroundElevated,
-  boxShadow: themes.dark.boxShadow.shadow8,
-  color: theme.primary,
+    backgroundColor: theme.backgroundElevated,
+    boxShadow: themes.dark.boxShadow.shadow8,
+    color: theme.primary,
 
-  animation: `${fadeIn} 0.2s ease-in`,
+    animation: `${fadeIn} 0.2s ease-in`,
   });
 };
 
