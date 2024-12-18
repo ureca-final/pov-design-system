@@ -14,14 +14,15 @@ export const getVariantStyling = (variant: Required<ToastProps>['variant']) => {
       backgroundColor: themes.dark.color.green600,
     }),
     error: css({
-      backgroundColor:themes.dark.color.red,
+      backgroundColor: themes.dark.color.red,
     }),
   };
 
   return style[variant];
 };
 
-export const getToastStyling = (isVisible: boolean) => css({
+export const getToastStyling = (isVisible: boolean) =>
+  css({
     bottom: themes.dark.spacer.spacing6,
     display: 'flex',
     justifyContent: 'space-between',
@@ -36,9 +37,7 @@ export const getToastStyling = (isVisible: boolean) => css({
 
     color: themes.dark.color.white,
 
-    animation: isVisible
-      ? `${fadeIn} 0.2s ease-in, ${moveUp} 0.2s ease-in`
-      : `${fadeOut} 0.2s ease-in forwards`,
+    animation: isVisible ? `${fadeIn} 0.2s ease-in, ${moveUp} 0.2s ease-in` : `${fadeOut} 0.2s ease-in forwards`,
 
     '& > svg': {
       width: '16px',
@@ -55,9 +54,9 @@ export const contentStyling = css({
   gap: themes.dark.spacer.spacing2,
   alignItems: 'center',
 
-  fontSize: themes.dark.typography.body03.fontSize,
-  lineHeight: themes.dark.typography.body03.lineHeight,
-  fontWeight: themes.dark.typography.body03.fontWeight,
+  fontSize: themes.dark.typography.body01.fontSize,
+  lineHeight: themes.dark.typography.body01.lineHeight,
+  fontWeight: themes.dark.typography.body01.fontWeight,
 });
 
 export const closeIconStyling = css({
