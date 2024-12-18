@@ -1,3 +1,16 @@
+# v0.1.0 (Wed Dec 18 2024)
+
+#### 🚀 Enhancement
+
+- fix: 파일 수정 [#80](https://github.com/eureka-final/pov-design-system/pull/80) ([@dyeon-dev](https://github.com/dyeon-dev))
+- release: 버전업을 위해 yml 파일에 버전 설정 [#79](https://github.com/eureka-final/pov-design-system/pull/79) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.0.67 (Wed Dec 18 2024)
 
 #### 🐛 Bug Fix
