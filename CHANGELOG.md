@@ -1,3 +1,15 @@
+# v0.1.2 (Fri Dec 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Update README.md ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.1.1 (Wed Dec 18 2024)
 
 #### 🐛 Bug Fix
