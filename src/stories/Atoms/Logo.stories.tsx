@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { Logo, CharacterProps } from '../components/Logo/Logo';
-import { characters } from '../assets/characters';
+import { Logo, CharacterProps } from '../../components/Logo/Logo';
+import { characters } from '../../assets/characters';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const Meta = styled.div`
@@ -54,7 +54,6 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-
 
 export const Labels = {
   render: (): JSX.Element => (

@@ -1,4 +1,4 @@
-import { containerStyle } from '@stories/styles';
+import { containerStyle } from '@/stories/Atoms/styles';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Skeleton from '@components/Skeleton/Skeleton';
@@ -29,7 +29,7 @@ export const Image: Story = {
   args: {
     width: '168px',
     height: '260px',
-    variant: "square"
+    variant: 'square',
   },
 };
 
@@ -52,13 +52,13 @@ export const Circle: Story = {
 
 export const Combination: Story = {
   render: () => (
-      <div css={containerStyle}>
-        <Skeleton variant="circle" width="100px" />
-        <Skeleton width="300px" height="100px" />
-        <Skeleton />
-        <Skeleton />
-      </div>
-    ),
+    <div css={containerStyle}>
+      <Skeleton variant="circle" width="100px" />
+      <Skeleton width="300px" height="100px" />
+      <Skeleton />
+      <Skeleton />
+    </div>
+  ),
   argTypes: {
     variant: { control: false },
     width: { control: false },

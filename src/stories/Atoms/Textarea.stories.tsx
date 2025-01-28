@@ -1,4 +1,4 @@
-import { containerStyle, informationStyle } from '@stories/styles';
+import { containerStyle, informationStyle } from '@/stories/Atoms/styles';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Textarea from '@components/Textarea/Textarea';
@@ -39,21 +39,21 @@ export const Playground: Story = {};
 
 export const Sizes: Story = {
   render: ({ isError, placeholder }) => (
-      <ul css={containerStyle}>
-        <li css={informationStyle}>
-          <h6>Small</h6>
-          <Textarea size="small" isError={isError} placeholder={placeholder} />
-        </li>
-        <li css={informationStyle}>
-          <h6>Medium</h6>
-          <Textarea isError={isError} placeholder={placeholder} />
-        </li>
-        <li css={informationStyle}>
-          <h6>Large</h6>
-          <Textarea size="large" isError={isError} placeholder={placeholder} />
-        </li>
-      </ul>
-    ),
+    <ul css={containerStyle}>
+      <li css={informationStyle}>
+        <h6>Small</h6>
+        <Textarea size="small" isError={isError} placeholder={placeholder} />
+      </li>
+      <li css={informationStyle}>
+        <h6>Medium</h6>
+        <Textarea isError={isError} placeholder={placeholder} />
+      </li>
+      <li css={informationStyle}>
+        <h6>Large</h6>
+        <Textarea size="large" isError={isError} placeholder={placeholder} />
+      </li>
+    </ul>
+  ),
   argTypes: {
     size: {
       control: false,

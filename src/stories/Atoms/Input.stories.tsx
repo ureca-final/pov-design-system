@@ -1,5 +1,5 @@
 import Icon from '@components/Icon/Icon';
-import { containerStyle, informationStyle } from '@stories/styles';
+import { containerStyle, informationStyle } from '@/stories/Atoms/styles';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Input from '@components/Input/Input';
@@ -46,17 +46,17 @@ export const Playground: Story = {};
 
 export const Variants: Story = {
   render: ({ size, isError, placeholder }) => (
-      <ul css={containerStyle}>
-        <li css={informationStyle}>
-          <h6>Default</h6>
-          <Input size={size} isError={isError} placeholder={placeholder} />
-        </li>
-        <li css={informationStyle}>
-          <h6>Text</h6>
-          <Input variant="text" size={size} isError={isError} placeholder={placeholder} />
-        </li>
-      </ul>
-    ),
+    <ul css={containerStyle}>
+      <li css={informationStyle}>
+        <h6>Default</h6>
+        <Input size={size} isError={isError} placeholder={placeholder} />
+      </li>
+      <li css={informationStyle}>
+        <h6>Text</h6>
+        <Input variant="text" size={size} isError={isError} placeholder={placeholder} />
+      </li>
+    </ul>
+  ),
   argTypes: {
     variant: {
       control: false,
@@ -66,21 +66,21 @@ export const Variants: Story = {
 
 export const Sizes: Story = {
   render: ({ variant, isError, placeholder }) => (
-      <ul css={containerStyle}>
-        <li css={informationStyle}>
-          <h6>Small</h6>
-          <Input size="small" variant={variant} isError={isError} placeholder={placeholder} />
-        </li>
-        <li css={informationStyle}>
-          <h6>Medium</h6>
-          <Input variant={variant} isError={isError} placeholder={placeholder} />
-        </li>
-        <li css={informationStyle}>
-          <h6>Large</h6>
-          <Input size="large" variant={variant} isError={isError} placeholder={placeholder} />
-        </li>
-      </ul>
-    ),
+    <ul css={containerStyle}>
+      <li css={informationStyle}>
+        <h6>Small</h6>
+        <Input size="small" variant={variant} isError={isError} placeholder={placeholder} />
+      </li>
+      <li css={informationStyle}>
+        <h6>Medium</h6>
+        <Input variant={variant} isError={isError} placeholder={placeholder} />
+      </li>
+      <li css={informationStyle}>
+        <h6>Large</h6>
+        <Input size="large" variant={variant} isError={isError} placeholder={placeholder} />
+      </li>
+    </ul>
+  ),
   argTypes: {
     size: {
       control: false,
@@ -112,7 +112,7 @@ export const Text: Story = {
 
 export const WithIcon: Story = {
   args: {
-    icon: <Icon icon="search" color='#ADACAF'/>,
+    icon: <Icon icon="search" color="#ADACAF" />,
   },
   argTypes: {
     icon: {
@@ -148,7 +148,7 @@ export const WithLabelAndSupportingText: Story = {
 export const WithIconLabelAndSupportingText: Story = {
   args: {
     label: 'Label',
-    icon: <Icon icon="search" color='#ADACAF' />,
+    icon: <Icon icon="search" color="#ADACAF" />,
     supportingText: 'Supporting Text',
     required: true,
   },

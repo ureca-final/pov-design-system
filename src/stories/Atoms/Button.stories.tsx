@@ -1,8 +1,8 @@
-import { containerStyle, informationStyle } from '../stories/styles';
+import { containerStyle, informationStyle } from './styles';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import type { ButtonProps } from '../components/Button/Button';
-import Button from '../components/Button/Button';
+import type { ButtonProps } from '../../components/Button/Button';
+import Button from '../../components/Button/Button';
 
 const meta = {
   title: 'Design System/Button',
@@ -52,13 +52,13 @@ export const Variants: Story = {
     <ul css={containerStyle}>
       <li css={informationStyle}>
         <h6>Primary</h6>
-        <Button variant='primary' size={size} disabled={disabled}>
+        <Button variant="primary" size={size} disabled={disabled}>
           {children}
         </Button>
       </li>
       <li css={informationStyle}>
         <h6>Secondary</h6>
-        <Button variant='secondary' size={size} disabled={disabled}>
+        <Button variant="secondary" size={size} disabled={disabled}>
           {children}
         </Button>
       </li>
@@ -76,19 +76,19 @@ export const Sizes: Story = {
     <ul css={containerStyle}>
       <li css={informationStyle}>
         <h6>Small</h6>
-        <Button variant={variant} size='small' disabled={disabled}>
+        <Button variant={variant} size="small" disabled={disabled}>
           {children}
         </Button>
       </li>
       <li css={informationStyle}>
         <h6>Medium</h6>
-        <Button variant={variant} size='medium' disabled={disabled}>
+        <Button variant={variant} size="medium" disabled={disabled}>
           {children}
         </Button>
       </li>
       <li css={informationStyle}>
         <h6>Large</h6>
-        <Button variant={variant} size='large' disabled={disabled}>
+        <Button variant={variant} size="large" disabled={disabled}>
           {children}
         </Button>
       </li>

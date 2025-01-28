@@ -1,5 +1,5 @@
 import { containerStyle, informationStyle } from './styles';
-import Badge from '../components/Badge/Badge';
+import Badge from '../../components/Badge/Badge';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
@@ -36,7 +36,7 @@ type Story = StoryObj<typeof meta>;
 export const Playground: Story = {};
 
 export const Variants: Story = {
-  render: ({children}) => (
+  render: ({ children }) => (
     <ul css={containerStyle}>
       <li css={informationStyle}>
         <h6>keyword</h6>
@@ -65,13 +65,13 @@ export const Sizes: Story = {
     <ul css={containerStyle}>
       <li css={informationStyle}>
         <h6>Small</h6>
-        <Badge variant={variant} size='small'>
+        <Badge variant={variant} size="small">
           {children}
         </Badge>
       </li>
       <li css={informationStyle}>
         <h6>Large</h6>
-        <Badge variant={variant} size='large'>
+        <Badge variant={variant} size="large">
           {children}
         </Badge>
       </li>

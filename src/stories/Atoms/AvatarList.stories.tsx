@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
 
-import { AvatarList, AvatarListProps } from '../components/AvatarList/AvatarList';
+import { AvatarList, AvatarListProps } from '../../components/AvatarList/AvatarList';
 
 export default {
   title: 'Design System/AvatarList',
@@ -44,8 +44,8 @@ Ellipsized.args = {
 
 export const BigUserCount = Template.bind({});
 BigUserCount.args = {
-    users: Ellipsized.args.users as AvatarListProps['users'],
-    userCount: 100,
+  users: Ellipsized.args.users as AvatarListProps['users'],
+  userCount: 100,
 };
 
 export const Empty = Template.bind({});
