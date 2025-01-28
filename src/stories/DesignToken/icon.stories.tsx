@@ -48,7 +48,7 @@ const List = styled.ul`
 `;
 
 const meta = {
-  title: 'Design System/Icon',
+  title: 'Design Token/Icon',
   component: Icon,
 } satisfies Meta<typeof Icon>;
 
@@ -62,7 +62,7 @@ export const Labels = {
       <List>
         {Object.keys(icons).map((key) => (
           <Item key={key}>
-            <Icon icon={key as keyof typeof icons} aria-hidden />
+            <Icon icon={key as keyof typeof icons} aria-hidden color="black" />
             <Meta>{key}</Meta>
           </Item>
         ))}
