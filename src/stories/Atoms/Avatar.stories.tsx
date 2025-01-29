@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Avatar } from '../components/Avatar/Avatar';
+import { Avatar } from '../../components/Avatar/Avatar';
 
 const meta: Meta<typeof Avatar> = {
   title: 'Design System/Avatar',
@@ -36,12 +36,7 @@ export const Sizes: Story = {
 export const Circle: Story = {
   render: () => (
     <>
-      <Avatar
-        size="medium"
-        username="Da Yeon"
-        src="https://avatars.githubusercontent.com/u/93921784?v=4"
-        selected={true}
-      />
+      <Avatar size="medium" username="Da Yeon" src="https://avatars.githubusercontent.com/u/93921784?v=4" selected={true} />
     </>
   ),
 };

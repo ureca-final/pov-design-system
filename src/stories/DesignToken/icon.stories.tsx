@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { Logo, CharacterProps } from '../components/Logo/Logo';
-import { characters } from '../assets/characters';
+import { Icon, IconProps } from '../../components/Icon/Icon';
+import { icons } from '../../assets/icons';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const Meta = styled.div`
@@ -48,22 +48,21 @@ const List = styled.ul`
 `;
 
 const meta = {
-  title: 'Design System/Logo',
-  component: Logo,
-} satisfies Meta<typeof Logo>;
+  title: 'Design Token/Icon',
+  component: Icon,
+} satisfies Meta<typeof Icon>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-
 export const Labels = {
   render: (): JSX.Element => (
     <>
-      There are {Object.keys(characters).length} icons
+      There are {Object.keys(icons).length} icons
       <List>
-        {Object.keys(characters).map((key) => (
+        {Object.keys(icons).map((key) => (
           <Item key={key}>
-            <Logo icon={key as keyof typeof characters} aria-hidden />
+            <Icon icon={key as keyof typeof icons} aria-hidden color="black" />
             <Meta>{key}</Meta>
           </Item>
         ))}
@@ -76,27 +75,46 @@ export const NoLabels = {
   name: 'no labels',
   render: (): JSX.Element => (
     <List>
-      {Object.keys(characters).map((key) => (
+      {Object.keys(icons).map((key) => (
         <Item minimal key={key}>
-          <Logo icon={key as keyof typeof characters} />
+          <Icon icon={key as keyof typeof icons} />
         </Item>
       ))}
     </List>
   ),
 };
 
-interface StoryArgs extends CharacterProps {
+interface StoryArgs extends IconProps {
   'aria-label'?: string;
 }
+
+export const Color: StoryObj<typeof Icon> = {
+  render: (args) => (
+    <List>
+      <Item>
+        <Icon color="red" {...args} />
+        <span>Red</span>
+      </Item>
+      <Item>
+        <Icon color="#1BD27D" {...args} />
+        <span>Accent color</span>
+      </Item>
+    </List>
+  ),
+  args: {
+    icon: 'heartfill',
+    'aria-label': 'Heart',
+  },
+};
 
 export const Inline = {
   render: (args: StoryArgs): JSX.Element => (
     <>
-      this is an inline <Logo {...args} /> icon (default)
+      this is an inline <Icon {...args} /> icon (default)
     </>
   ),
   args: {
-    icon: 'logo',
+    icon: 'heartfill',
     'aria-label': 'Heart',
   },
 };
@@ -104,11 +122,11 @@ export const Inline = {
 export const Block = {
   render: (args: StoryArgs): JSX.Element => (
     <>
-      this is a block <Logo {...args} /> icon
+      this is a block <Icon {...args} /> icon
     </>
   ),
   args: {
-    icon: 'logo',
+    icon: 'heartfill',
     'aria-label': 'Heart',
     block: true,
   },

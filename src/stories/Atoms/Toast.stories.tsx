@@ -1,5 +1,5 @@
 import Icon from '@components/Icon/Icon';
-import { containerStyle } from '@stories/styles';
+import { containerStyle } from '@/stories/Atoms/styles';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Button from '@components/Button/Button';
