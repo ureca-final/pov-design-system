@@ -1,3 +1,15 @@
+# v0.1.3 (Wed Jan 29 2025)
+
+#### 🐛 Bug Fix
+
+- 82 designtoken [#83](https://github.com/ureca-final/pov-design-system/pull/83) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.1.2 (Fri Dec 20 2024)
 
 #### ⚠️ Pushed to `main`
