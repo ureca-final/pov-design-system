@@ -9,14 +9,7 @@ export interface BadgeProps extends ComponentPropsWithoutRef<'span'> {
   click?: boolean;
 }
 
-const Badge = ({
-  variant,
-  size = 'small',
-  cancel = false,
-  click = false,
-  children,
-  ...attributes
-}: BadgeProps) => {
+const Badge = ({ variant, size = 'small', cancel = false, click = false, children, ...attributes }: BadgeProps) => {
   const isActive = variant === 'keyword' ? cancel : click;
 
   // children 값 확인 및 안전한 처리
@@ -24,7 +17,7 @@ const Badge = ({
     console.error('Invalid children passed to Badge:', children);
     return null; // 잘못된 children이 전달되었을 경우 null 반환
   }
-  
+
   return (
     <span css={[badgeStyling, getVariantStyling(variant, isActive), getSizeStyling(size)]} {...attributes}>
       {variant === 'keyword' && isActive ? (
