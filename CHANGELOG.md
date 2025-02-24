@@ -1,3 +1,15 @@
+# v0.1.4 (Mon Feb 24 2025)
+
+#### 🐛 Bug Fix
+
+- dosc: readme update [#84](https://github.com/ureca-final/pov-design-system/pull/84) ([@dyeon-dev](https://github.com/dyeon-dev))
+
+#### Authors: 1
+
+- DaYeonKim ([@dyeon-dev](https://github.com/dyeon-dev))
+
+---
+
 # v0.1.3 (Wed Jan 29 2025)
 
 #### 🐛 Bug Fix
