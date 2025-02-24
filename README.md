@@ -16,7 +16,7 @@ $ yarn add pov-design-system
 
 ### Getting started
 
-To start using the components, first wrap your application in a provider provided by hang-log-design-system
+To start using the components, first wrap your application in a provider provided by pov-design-system
 
 ```javascript
 import { PovProvider } from 'pov-design-system';
